@@ -2,8 +2,9 @@
 include('simplehtmldom_1_9_1/simple_html_dom.php');
 $checkName = $_GET["exStoreURL"];
 $nameStart = strpos($checkName, 'www.')+4;
-$nameEnd = strpos($checkName, '.com');
-$checkName = substr($checkName, $nameStart, $nameEnd-$nameStart);
+$storeURLNoWWW = str_replace("www.","",$checkName);
+$nameEnd = strpos($storeURLNoWWW, '.');
+$checkName = substr($checkName, $nameStart, ($nameEnd+4)-$nameStart);
 
 $servername = "localhost";
 $username = "root";

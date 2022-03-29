@@ -12,8 +12,9 @@ if (!$conn) {
 }
 $storeURL = $_GET["storeURL"];
 $nameStart = strpos($storeURL, 'www.')+4;
-$nameEnd = strpos($storeURL, '.com');
-$storeName = substr($storeURL, $nameStart, $nameEnd-$nameStart);
+$storeURLNoWWW = str_replace("www.","",$storeURL);
+$nameEnd = strpos($storeURLNoWWW, '.');
+$storeName = substr($storeURL, $nameStart, ($nameEnd+4)-$nameStart);
 $dealSelector = $_GET["dealSelector"];
 
 $options = array(
@@ -32,13 +33,14 @@ $sum = 0;
 
 //Find a deal and display text
 $currentImagePath = $html->find($dealSelector);
+//echo sizeof($currentImagePath);
 foreach ($currentImagePath as $path) {
   $deal = $path->text();
   $deal = trim($deal);
+  $deal = str_replace("'","",$deal);
 	echo $deal;
 }
 echo "<br>";
-
 
 
 $sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal)
