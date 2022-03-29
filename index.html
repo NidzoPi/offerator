@@ -11,29 +11,42 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
             h2{
-                margin-left: 60px;
+                margin-left: 40px;
                 margin top: 20px;
                 font-size: 12px;
                 font-family: Arial, Helvetica, sans-serif;
             }
             input{
-                margin-left: 60px;
+                margin-left: 40px;
             }
             button{
-                margin-left: 60px;
+                margin-left: 40px;
                 margin-top: 12px
+            }
+            .btn{
+                margin-top: 10px;
+            }
+            .checkingH{
+                margin-top: 30px;
             }
         </style>
     </head>
     <body>
         <h1 aria-setsize="12px">Scraper panel</h1>
-        <h2>Input store URL where deals are:</h2>
+        <h2>Input new store URL where deals are:</h2>
         <form action="insert.php">
             <input type="text" placeholder="Store URL" name="storeURL">
             <h2>Deal selector:</h2>
             <input type="text" placeholder="Deal selector" name="dealSelector">
             <br>
-            <input type="submit" value="Apply"></input>
+            <input type="submit" class="btn" value="Add">
+        </form>
+        <h2 class="checkingH">Check if there is new deals for existing store</h2>
+        <form action="check.php">
+            <input type="text" placeholder="Existing store URL" name="exStoreURL">
+            <br>
+            <input type="submit" class="btn" value="Check">
+
         </form>
     </body>
 
