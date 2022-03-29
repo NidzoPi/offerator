@@ -4,9 +4,12 @@
         <title>Scraper panel</title>
         <meta charset="UTF-8">
         <style>
+            body{
+                margin: 0;
+            }
             h1{
                 position: relative;
-                margin-left: 20px;
+                background-color: #006a80;
                 font-size: 20px;
                 font-family: Arial, Helvetica, sans-serif;
             }
@@ -46,7 +49,9 @@
             <input type="text" placeholder="Existing store URL" name="exStoreURL">
             <br>
             <input type="submit" class="btn" value="Check">
-
+        </form>
+        <form action="checkAll.php">
+            <input type="submit" class="btn" value="Check All">
         </form>
     </body>
 
