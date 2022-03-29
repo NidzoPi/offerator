@@ -33,16 +33,21 @@ $sum = 0;
 //Find a deal and display text
 $currentImagePath = $html->find($dealSelector);
 foreach ($currentImagePath as $path) {
-	echo $path->text();
+  $deal = $path->text();
+  $deal = trim($deal);
+	echo $deal;
 }
+echo "<br>";
 
-/*
+
+
 $sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal)
-VALUES ($storeName, $storeURL, $dealSelector)";
+VALUES ('".$storeName."','".$storeURL."','".$dealSelector."','".$deal."')";
 if (mysqli_query($conn, $sql)) {
-  echo "New record created successfully";
+  echo "Great success!";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-mysqli_close($conn);*/
+mysqli_close($conn);
+
 ?>
