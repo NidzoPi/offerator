@@ -30,10 +30,11 @@ $html = file_get_html($storeURL, false, $context);
 $sum = 0;
 
 
-//selector of coupon text string
-$currentImagePath = $html->find($dealSelector)[0];
-// substring coupon code
-echo ($currentImagePath);
+//Find a deal and display text
+$currentImagePath = $html->find($dealSelector);
+foreach ($currentImagePath as $path) {
+	echo $path->text();
+}
 
 /*
 $sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal)
