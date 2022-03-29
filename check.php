@@ -45,9 +45,10 @@ if (mysqli_num_rows($result) > 0) {
         $currentImagePath = $html->find($row["dealSelector"]);
         foreach ($currentImagePath as $path) {
             $deal = $path->text();
-            
+            $deal = trim($deal);
+            $deal = str_replace("'","",$deal);
         }
-        $deal = trim($deal);
+        
       if($row["storeName"] == $checkName){
           if($deal==$row["deal"]){
             echo "Store exist, great success! ID:";
@@ -58,6 +59,10 @@ if (mysqli_num_rows($result) > 0) {
             echo $row["deal"];
           }
           else{
+            echo "Last deal/offer was: ".$row["deal"];
+            echo "<br>";
+            echo "New deal/offer is: ".$deal;
+            echo "<br>";
             $sql = "UPDATE store SET deal='".$deal."' WHERE id=".$row['id']."";
             if (mysqli_query($conn, $sql)) {
                 echo "Updated, great success!";

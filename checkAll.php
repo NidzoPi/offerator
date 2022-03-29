@@ -51,10 +51,10 @@ if (mysqli_num_rows($result) > 0) {
         $currentImagePath = $html->find($row["dealSelector"]);
         foreach ($currentImagePath as $path) {
             $deal = $path->text();
-            
+            $deal = trim($deal);
+            $deal = str_replace("'","",$deal);
         }
-        $deal = trim($deal);
-        $deal = str_replace("'","",$deal);
+        
         echo "<td>".$row["storeName"]."</td>";
         echo "<td>".$row["storeURL"]."</td>";
         echo "<td>".$row["deal"]."</td>";
