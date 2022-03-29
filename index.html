@@ -5,54 +5,113 @@
         <meta charset="UTF-8">
         <style>
             body{
+                background-color: #b4f5ff37;
                 margin: 0;
             }
+            .container{
+                text-align:center;
+            }
+            img{
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
             h1{
-                position: relative;
-                background-color: #006a80;
-                font-size: 20px;
                 font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
             }
             h2{
-                margin-left: 40px;
+                position: relative;
+                align: center;
                 margin top: 20px;
-                font-size: 12px;
+                font-size: 18px;
                 font-family: Arial, Helvetica, sans-serif;
             }
             input{
-                margin-left: 40px;
+                align: center;
             }
-            button{
-                margin-left: 40px;
-                margin-top: 12px
+            .button-7 {
+                background-color: #0095ff;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+                box-sizing: border-box;
+                color: #fff;
+                cursor: pointer;
+                display: inline-block;
+                font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.15385;
+                margin: 0;
+                outline: none;
+                padding: 8px .8em;
+                position: relative;
+                top: 10px;
+                text-align: center;
+                text-decoration: none;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                vertical-align: baseline;
+                white-space: nowrap;
             }
-            .btn{
-                margin-top: 10px;
+
+            .button-7:hover,
+            .button-7:focus {
+                background-color: #07c;
             }
+
+            .button-7:focus {
+                box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+            }
+
+            .button-7:active {
+                background-color: #0064bd;
+                box-shadow: none;
+            }  
             .checkingH{
                 margin-top: 30px;
+            }
+            .textField{
+                border: 4px, solid, #0095ff;
+                border-radius: 3px;
+                width: 300px;
+                height: 30px;
+
+            }
+            .bannerUnderLine{
+                color: black;
+                background-color: black;
+                height: 5px;
+                width: 75%;
+                align: right;
             }
         </style>
     </head>
     <body>
-        <h1 aria-setsize="12px">Scraper panel</h1>
+        <img src="Offerator.png">
+        <hr align="center" class="bannerUnderLine">
+        <div class="container">
         <h2>Input new store URL where deals are:</h2>
         <form action="insert.php">
-            <input type="text" placeholder="Store URL" name="storeURL">
+            <input type="text" class="textField" placeholder="Store URL" name="storeURL">
             <h2>Deal selector:</h2>
-            <input type="text" placeholder="Deal selector" name="dealSelector">
+            <input type="text" class="textField" placeholder="Deal selector" name="dealSelector">
             <br>
-            <input type="submit" class="btn" value="Add">
+            <input type="submit" class="button-7" value="Add">
         </form>
         <h2 class="checkingH">Check if there is new deals for existing store</h2>
         <form action="check.php">
-            <input type="text" placeholder="Existing store URL" name="exStoreURL">
+            <input type="text" class="textField" placeholder="Existing store URL" name="exStoreURL">
             <br>
-            <input type="submit" class="btn" value="Check">
+            <input type="submit" class="button-7" value="Check">
         </form>
+        <br>
         <form action="checkAll.php">
-            <input type="submit" class="btn" value="Check All">
+            <input type="submit" class="button-7" value="Check All">
         </form>
+        </div>
     </body>
 
 </html>
