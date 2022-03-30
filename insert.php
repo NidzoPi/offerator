@@ -12,9 +12,15 @@ if (!$conn) {
 }
 $storeURL = $_GET["storeURL"];
 $nameStart = strpos($storeURL, 'www.')+4;
-$storeURLNoWWW = str_replace("www.","",$storeURL);
-$nameEnd = strpos($storeURLNoWWW, '.');
-$storeName = substr($storeURL, $nameStart, ($nameEnd+4)-$nameStart);
+if($nameStart == 4){
+  $nameStart= $nameStart + 4;
+  $nameEnd = strpos($storeURL, '.');
+  $storeName = substr($storeURL, $nameStart, $nameEnd-$nameStart);
+}else{
+  $storeURLNoWWW = str_replace("www.","",$storeURL);
+  $nameEnd = strpos($storeURLNoWWW, '.');
+  $storeName = substr($storeURL, $nameStart, $nameEnd-$nameStart+4);
+}
 $dealSelector = $_GET["dealSelector"];
 
 $options = array(
@@ -33,6 +39,7 @@ $sum = 0;
 $sql = "SELECT id, storeName, storeURL, dealSelector, deal, timeStam FROM store WHERE storeName='".$storeName."' ORDER BY id DESC LIMIT 1";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
+//echo $html;
 //Find a deal and display text
 $currentImagePath = $html->find($dealSelector);
 //echo sizeof($currentImagePath);
