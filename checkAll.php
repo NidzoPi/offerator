@@ -29,7 +29,7 @@ $options = array(
   
   
 
-$sql = "SELECT id, storeName, storeURL, dealSelector, deal, timeStam FROM store";
+$sql = "SELECT * FROM store WHERE id IN (SELECT MAX(id) FROM store GROUP BY storeName);";
 $result = mysqli_query($conn, $sql);
 
 $currTime = date("m/d/Y h:i a", time());
@@ -66,7 +66,7 @@ if (mysqli_num_rows($result) > 0) {
           }
           else{
             echo "<td style='background-color:#FF0000'>".$deal."</td>";
-            $sql = "UPDATE store SET deal='".$deal."', timeStam='".$currTime."' WHERE id=".$row['id']."";
+            $sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal, timeStam) VALUES ('".$row["storeName"]."','".$row["storeURL"]."','".$row["dealSelector"]."','".$deal."','".$currTime."')";
             if (mysqli_query($conn, $sql)) {
                 echo "Updated, great success!";
               } else {
