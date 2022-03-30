@@ -28,20 +28,50 @@ $options = array(
   );
   $context = stream_context_create($options);
   
-  $html = file_get_html($_GET["exStoreURL"], false, $context);
+  
   $sum = 0;
   
   
   
 
-$sql = "SELECT id, storeName, storeURL, dealSelector, deal FROM store";
+$sql = "SELECT id, storeName, storeURL, dealSelector, deal, timeStam FROM store WHERE storeName='".$checkName."' ORDER BY id DESC LIMIT 1";
 $result = mysqli_query($conn, $sql);
-
-
+$currTime = date("m/d/Y h:i a", time());
+$counter = 0;
 
 if (mysqli_num_rows($result) > 0) {
+  $html = file_get_html($_GET["exStoreURL"], false, $context);
+  echo "Results found<br>";
+  $row = mysqli_fetch_assoc($result);
+  
+  
+  $currentImagePath = $html->find($row["dealSelector"]);
+        foreach ($currentImagePath as $path) {
+            $deal = $path->text();
+            $deal = trim($deal);
+            $deal = str_replace("'","",$deal);
+        }
+        if($deal!=$row["deal"]){
+        echo "Previous update was: ".$row['timeStam']."<br>";
+        $sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal, timeStam) VALUES ('".$row["storeName"]."','".$row["storeURL"]."','".$row["dealSelector"]."','".$deal."','".$currTime."')";
+         
+          if (mysqli_query($conn, $sql)) {
+            echo "Updated NOW, great success!<br>";
+    
+            } else {
+              echo "Failed." . mysqli_error($conn);
+          
+          } 
+        }else{
+          echo "Deal for this store is up to date!<br>";
+        }
+}else{
+    echo "No results<br>";
+}
+
+  
   // output data of each row
-  while($row = mysqli_fetch_assoc($result)) {
+  /*while($row = mysqli_fetch_assoc($result) && $counter < 1) {
         //Find a deal and display text
         $currentImagePath = $html->find($row["dealSelector"]);
         foreach ($currentImagePath as $path) {
@@ -64,7 +94,8 @@ if (mysqli_num_rows($result) > 0) {
             echo "<br>";
             echo "New deal/offer is: ".$deal;
             echo "<br>";
-            $sql = "UPDATE store SET deal='".$deal."' WHERE id=".$row['id']."";
+            $sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal, timeStam) VALUES ('".$storeName."','".$storeURL."','".$dealSelector."','".$deal."','".$currTime."')";
+            //$counter = $counter + 1;
             if (mysqli_query($conn, $sql)) {
                 echo "Updated, great success!";
               } else {
@@ -74,11 +105,12 @@ if (mysqli_num_rows($result) > 0) {
           echo "<br>";
       }
     //echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+  
   }
 } else {
   echo "0 results";
 }
 
-mysqli_close($conn);
+mysqli_close($conn);*/
 
 ?>
