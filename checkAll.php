@@ -29,8 +29,10 @@ $options = array(
   
   
 
-$sql = "SELECT id, storeName, storeURL, dealSelector, deal FROM store";
+$sql = "SELECT id, storeName, storeURL, dealSelector, deal, timeStam FROM store";
 $result = mysqli_query($conn, $sql);
+
+$currTime = date("m/d/Y h:i a", time());
 
 
 
@@ -41,6 +43,7 @@ if (mysqli_num_rows($result) > 0) {
     echo "<th>Store URL</th>";
     echo "<th>Last deal</th>";
     echo "<th>Current deal</th>";
+    echo "<th>Last edit</th>";
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
       echo "<tr>";
@@ -63,13 +66,14 @@ if (mysqli_num_rows($result) > 0) {
           }
           else{
             echo "<td style='background-color:#FF0000'>".$deal."</td>";
-            $sql = "UPDATE store SET deal='".$deal."' WHERE id=".$row['id']."";
+            $sql = "UPDATE store SET deal='".$deal."', timeStam='".$currTime."' WHERE id=".$row['id']."";
             if (mysqli_query($conn, $sql)) {
                 echo "Updated, great success!";
               } else {
                 echo "Failed." . mysqli_error($conn);
               }
           }
+        echo "<td>".$row["timeStam"]."</td>";
           echo "<br>";
 
         echo "</tr>";

@@ -41,10 +41,10 @@ foreach ($currentImagePath as $path) {
 	echo $deal;
 }
 echo "<br>";
+$currTime = date("m/d/Y h:i a", time());
 
-
-$sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal)
-VALUES ('".$storeName."','".$storeURL."','".$dealSelector."','".$deal."')";
+$sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal, timeStam)
+VALUES ('".$storeName."','".$storeURL."','".$dealSelector."','".$deal."','".$currTime."')";
 if (mysqli_query($conn, $sql)) {
   echo "Great success!";
 } else {
