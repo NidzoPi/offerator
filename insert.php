@@ -30,7 +30,9 @@ $context = stream_context_create($options);
 $html = file_get_html($storeURL, false, $context);
 $sum = 0;
 
-
+$sql = "SELECT id, storeName, storeURL, dealSelector, deal, timeStam FROM store WHERE storeName='".$storeName."' ORDER BY id DESC LIMIT 1";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
 //Find a deal and display text
 $currentImagePath = $html->find($dealSelector);
 //echo sizeof($currentImagePath);
@@ -42,14 +44,32 @@ foreach ($currentImagePath as $path) {
 }
 echo "<br>";
 $currTime = date("m/d/Y h:i a", time());
-
-$sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal, timeStam)
-VALUES ('".$storeName."','".$storeURL."','".$dealSelector."','".$deal."','".$currTime."')";
-if (mysqli_query($conn, $sql)) {
+if (mysqli_num_rows($result) > 0) {
+      $sql = "UPDATE store SET dealSelector='".$dealSelector."', deal='".$deal."' WHERE id=".$row['id']."";
+      
+    if (mysqli_query($conn, $sql)) {
+        echo "Great success! Store exist, deal updated!<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+  } else {
+      $sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal, timeStam) VALUES ('".$storeName."','".$storeURL."','".$dealSelector."','".$deal."','".$currTime."')";
+      
+  if (mysqli_query($conn, $sql)) {
+      echo "Great success! Store added!<br>";
+  } else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+}
+/*if (mysqli_query($conn, $sql)) {
   echo "Great success!";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
+}*/
+
+
+
+
 mysqli_close($conn);
 
 ?>
