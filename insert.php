@@ -32,16 +32,21 @@ $conn = connectToBase();
 $sql = "SELECT id, storeName, storeURL, dealSelector, deal, timeStam FROM store WHERE storeName='".$storeName."' ORDER BY id DESC LIMIT 1";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
+$br = 0;
 //echo $html;
 //Find a deal and display text
 $currentImagePath = $html->find($dealSelector);
 //echo sizeof($currentImagePath);
 foreach ($currentImagePath as $path) {
+  if($br < 1){
   $deal = $path->text();
   $deal = trim($deal);
   $deal = str_replace("'","",$deal);
-	echo $deal;
+  $br = $br + 1;
+  }
+	//echo $deal;
 }
+echo $deal;
 echo "<br>";
 $currTime = date("m/d/Y h:i a", time());
 if (mysqli_num_rows($result) > 0) {

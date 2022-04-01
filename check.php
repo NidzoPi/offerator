@@ -34,13 +34,17 @@ if (mysqli_num_rows($result) > 0) {
   $html = file_get_html($_GET["exStoreURL"], false, $context);
   echo "Results found<br>";
   $row = mysqli_fetch_assoc($result);
+  $br = 0;
   
   
   $currentImagePath = $html->find($row["dealSelector"]);
         foreach ($currentImagePath as $path) {
+          if($br < 1){
             $deal = $path->text();
             $deal = trim($deal);
             $deal = str_replace("'","",$deal);
+            $br = $br + 1;
+          }
         }
         if($deal!=$row["deal"]){
         echo "Previous update was: ".$row['timeStam']."<br>";

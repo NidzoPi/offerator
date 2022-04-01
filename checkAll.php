@@ -2,8 +2,6 @@
 include('simplehtmldom_1_9_1/simple_html_dom.php');
 include('dbCon.php');
 
-
-
 $options = array(
     'http'=>array(
       'method'=>"GET",
@@ -28,6 +26,7 @@ $currTime = date("m/d/Y h:i a", time());
 
 
 if (mysqli_num_rows($result) > 0) {
+  
     echo "<table border='1'>";
     echo "<thead>";
     echo "<th>Store name</th>";
@@ -37,16 +36,20 @@ if (mysqli_num_rows($result) > 0) {
     echo "<th>Last edit</th>";
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
-      echo "<tr>";
+    $br = 0;
+        echo "<tr>";
         
     $html = file_get_html($row["storeURL"], false, $context);
         
         //Find a deal and display text
         $currentImagePath = $html->find($row["dealSelector"]);
         foreach ($currentImagePath as $path) {
+          if($br < 1){
             $deal = $path->text();
             $deal = trim($deal);
             $deal = str_replace("'","",$deal);
+            $br = $br + 1;
+          }
         }
         
         echo "<td>".$row["storeName"]."</td>";
@@ -65,7 +68,7 @@ if (mysqli_num_rows($result) > 0) {
               }
           }
         echo "<td>".$row["timeStam"]."</td>";
-          echo "<br>";
+          //echo "<br>";
 
         echo "</tr>";
     //echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
