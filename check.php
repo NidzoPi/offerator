@@ -1,22 +1,13 @@
 <?php
 include('simplehtmldom_1_9_1/simple_html_dom.php');
+include('dbCon.php');
+
 $checkName = $_GET["exStoreURL"];
 $nameStart = strpos($checkName, 'www.')+4;
 $storeURLNoWWW = str_replace("www.","",$checkName);
 $nameEnd = strpos($storeURLNoWWW, '.');
 $checkName = substr($checkName, $nameStart, ($nameEnd+4)-$nameStart);
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "scraperdb";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
 
 $options = array(
     'http'=>array(
@@ -33,7 +24,7 @@ $options = array(
   
   
   
-
+$conn = connectToBase();
 $sql = "SELECT id, storeName, storeURL, dealSelector, deal, timeStam FROM store WHERE storeName='".$checkName."' ORDER BY id DESC LIMIT 1";
 $result = mysqli_query($conn, $sql);
 $currTime = date("m/d/Y h:i a", time());

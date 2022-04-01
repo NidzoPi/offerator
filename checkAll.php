@@ -1,17 +1,8 @@
 <?php
 include('simplehtmldom_1_9_1/simple_html_dom.php');
+include('dbCon.php');
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "scraperdb";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
 
 $options = array(
     'http'=>array(
@@ -27,7 +18,7 @@ $options = array(
   $sum = 0;
   
   
-  
+$conn = connectToBase();  
 
 $sql = "SELECT * FROM store WHERE id IN (SELECT MAX(id) FROM store GROUP BY storeName);";
 $result = mysqli_query($conn, $sql);
