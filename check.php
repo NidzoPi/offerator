@@ -2,11 +2,17 @@
 include('simplehtmldom_1_9_1/simple_html_dom.php');
 include('dbCon.php');
 
-$checkName = $_GET["exStoreURL"];
-$nameStart = strpos($checkName, 'www.')+4;
-$storeURLNoWWW = str_replace("www.","",$checkName);
-$nameEnd = strpos($storeURLNoWWW, '.');
-$checkName = substr($checkName, $nameStart, ($nameEnd+4)-$nameStart);
+$storeURL = $_GET["exStoreURL"];
+$nameStart = strpos($storeURL, 'www.')+4;
+if($nameStart == 4){
+  $nameStart= $nameStart + 4;
+  $nameEnd = strpos($storeURL, '.');
+  $checkName = substr($storeURL, $nameStart, $nameEnd-$nameStart);
+}else{
+  $storeURLNoWWW = str_replace("www.","",$storeURL);
+  $nameEnd = strpos($storeURLNoWWW, '.');
+  $checkName = substr($storeURL, $nameStart, $nameEnd-$nameStart+4);
+}
 
 
 $options = array(
