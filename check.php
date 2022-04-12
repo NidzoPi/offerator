@@ -12,28 +12,6 @@ $client->setAuthConfig(__DIR__ . '/credentials.json');
 $service = new Google_Service_Sheets($client);
 $spreadsheetId = '1ohPZRbD_8hJ4V17isFAHhxz0QG-6S4_s_U84cMzRs_4';
 
-/*
-$range = "Sheet1";
-$values = [
-  ["Igor", "Drljaca"],
-];
-$body = new Google_Service_Sheets_ValueRange([
-  'values' => $values
-]);
-$params = [
-  'valueInputOption' => 'RAW'
-];
-$insert = [
-  "insertDataOption" => "INSERT_ROWS"
-];
-$result = $service->spreadsheets_values->append(
-  $spreadsheetId,
-  $range,
-  $body,
-  $params,
-  $insert
-);
-*/
 
 
 $storeURL = $_GET["exStoreURL"];
@@ -103,7 +81,7 @@ if (mysqli_num_rows($result) > 0) {
         $insert = [
           "insertDataOption" => "INSERT_ROWS"
         ];
-        $result = $service->spreadsheets_values->append(
+        $res = $service->spreadsheets_values->append(
           $spreadsheetId,
           $range,
           $body,
