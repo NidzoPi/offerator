@@ -2,6 +2,16 @@
 include('simplehtmldom_1_9_1/simple_html_dom.php');
 include('dbCon.php');
 
+require __DIR__ . '/vendor/autoload.php';
+
+$client = new \Google_Client();
+$client->setApplicationName('Google Sheets and PHP');
+$client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
+$client->setAccessType('offline');
+$client->setAuthConfig(__DIR__ . '/credentials.json');
+$service = new Google_Service_Sheets($client);
+$spreadsheetId = '1ohPZRbD_8hJ4V17isFAHhxz0QG-6S4_s_U84cMzRs_4';
+
 $options = array(
     'http'=>array(
       'method'=>"GET",
@@ -61,6 +71,26 @@ if (mysqli_num_rows($result) > 0) {
           else{
             echo "<td style='background-color:#FF0000'>".$deal."</td>";
             $sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal, timeStam) VALUES ('".$row["storeName"]."','".$row["storeURL"]."','".$row["dealSelector"]."','".$deal."','".$currTime."')";
+              $range = "Sheet1";
+              $values = [
+                [$row["storeName"], $row["storeURL"], $row["dealSelector"], $deal, $currTime],
+              ];
+              $body = new Google_Service_Sheets_ValueRange([
+                'values' => $values
+              ]);
+              $params = [
+                'valueInputOption' => 'RAW'
+              ];
+              $insert = [
+                "insertDataOption" => "INSERT_ROWS"
+              ];
+              $res = $service->spreadsheets_values->append(
+                $spreadsheetId,
+                $range,
+                $body,
+                $params,
+                $insert
+              );
             if (mysqli_query($conn, $sql)) {
                 echo "Updated, great success!";
               } else {
