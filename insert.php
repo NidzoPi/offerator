@@ -1,6 +1,18 @@
 <?php
 include('simplehtmldom_1_9_1/simple_html_dom.php');
 include('dbCon.php');
+
+require __DIR__ . '/vendor/autoload.php';
+
+$client = new \Google_Client();
+$client->setApplicationName('Google Sheets and PHP');
+$client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
+$client->setAccessType('offline');
+$client->setAuthConfig(__DIR__ . '/credentials.json');
+$service = new Google_Service_Sheets($client);
+$spreadsheetId = '1ohPZRbD_8hJ4V17isFAHhxz0QG-6S4_s_U84cMzRs_4';
+
+
 $storeURL = $_GET["storeURL"];
 $nameStart = strpos($storeURL, 'www.')+4;
 if($nameStart == 4){
@@ -51,6 +63,26 @@ echo "<br>";
 $currTime = date("m/d/Y h:i a", time());
 if (mysqli_num_rows($result) > 0) {
       $sql = "UPDATE store SET dealSelector='".$dealSelector."', deal='".$deal."' WHERE id=".$row['id']."";
+              $range = "Sheet1";
+              $values = [
+                [$storeName, $storeURL, $dealSelector, $deal, $currTime],
+              ];
+              $body = new Google_Service_Sheets_ValueRange([
+                'values' => $values
+              ]);
+              $params = [
+                'valueInputOption' => 'RAW'
+              ];
+              $insert = [
+                "insertDataOption" => "INSERT_ROWS"
+              ];
+              $res = $service->spreadsheets_values->append(
+                $spreadsheetId,
+                $range,
+                $body,
+                $params,
+                $insert
+              );
       
     if (mysqli_query($conn, $sql)) {
         echo "Great success! Store exist, deal updated!<br>";
@@ -59,7 +91,26 @@ if (mysqli_num_rows($result) > 0) {
     }
   } else {
       $sql = "INSERT INTO store (storeName, storeURL, dealSelector, deal, timeStam) VALUES ('".$storeName."','".$storeURL."','".$dealSelector."','".$deal."','".$currTime."')";
-      
+              $range = "Sheet1";
+              $values = [
+                [$storeName, $storeURL, $dealSelector, $deal, $currTime],
+              ];
+              $body = new Google_Service_Sheets_ValueRange([
+                'values' => $values
+              ]);
+              $params = [
+                'valueInputOption' => 'RAW'
+              ];
+              $insert = [
+                "insertDataOption" => "INSERT_ROWS"
+              ];
+              $res = $service->spreadsheets_values->append(
+                $spreadsheetId,
+                $range,
+                $body,
+                $params,
+                $insert
+              );
   if (mysqli_query($conn, $sql)) {
       echo "Great success! Store added!<br>";
   } else {
