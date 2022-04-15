@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2022 at 12:53 PM
+-- Generation Time: Apr 15, 2022 at 01:13 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.28
 
@@ -41,35 +41,6 @@ CREATE TABLE `store` (
 --
 
 INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `timeStam`) VALUES
-(35, 'nutrisystem', 'https://www.nutrisystem.com/', '.mobile-promo', 'Todays Special: Save 50% or More on All Plans + Free Shipping!', '03/30/2022 10:45 am'),
-(61, 'bbqguys', 'https://www.bbqguys.com/', '.promo-link', 'Free Shipping   Over $59.*', '03/30/2022 02:52 pm'),
-(64, 'fractureme', 'https://www.fractureme.com/', '#preheader>div>div>p+p', 'Free shipping on all US orders!', '03/30/2022 03:19 pm'),
-(101, 'lumedeodorant', 'https://lumedeodorant.com/', 'section.home-hero div p+p', 'Free U.S. Shipping over $25', '04/04/2022 08:55 pm'),
-(102, 'ariat', 'https://www.ariat.com/', 'footer+aside div.__content', 'Free Shipping and Free Returns up to 90 days* Details </p>', '04/05/2022 09:23 am'),
-(103, 'venus', 'https://www.venus.com/', '.landing_container>div>div>div:nth-last-child(1)>span', 'SIGN UP FOR EMAIL OFFERS &amp; EXCLUSIVE DEALS', '04/09/2022 09:35 pm'),
-(105, 'asos', 'https://asos.com/us/men/', '.salesBanner-header__title>span', 'EXTRA 20% OFF!                                                      \r\n  UP TO 70% OFF ALREADY', '04/09/2022 09:35 pm'),
-(106, 'bistromd', 'https://www.bistromd.com/', '.hero-container div.text-center p', '25% off + free shipping\r\n                      on your first week', '04/11/2022 02:15 pm'),
-(107, 'levenger', 'https://www.levenger.com/', '.index-enjory>strong', 'Gifts for Them &amp; $35 Gift Card for You* &bull; Code MYGIFTS&nbsp;&bull;', '04/11/2022 02:20 pm'),
-(108, 'relieffactor', 'https://www.relieffactor.com/', '#new-single>h1', 'SUBSCRIBE &amp; SAVE 15%', '04/11/2022 02:29 pm'),
-(109, '3balls', 'https://www.3balls.com/', '.promo-line', 'Free Shipping on Orders Over $199 Details\n\nNo code needed. 			15% OFF YOUR ORDER\n\nCODE: GREEN', '04/11/2022 02:30 pm'),
-(110, 'paintyourlife', 'https://www.paintyourlife.com/', '.has-coupon>span', 'Free shipping within the US & 100% Money-Back Guarantee', '04/11/2022 02:32 pm'),
-(111, 'brighton', 'https://www.brighton.com/#catalog/interlok-collection-hero', '.header_spacer_dupe>a', 'FREE CANVAS TOTE –  With min. $150 Purchase. LEARN MORE', '04/11/2022 02:39 pm'),
-(112, 'keepsakequilting', 'https://www.keepsakequilting.com/', '.freeShipping', 'Free Shipping Over $100', '04/11/2022 02:41 pm'),
-(113, 'albanypark', 'https://www.albanypark.com/', '.header-promotion-text', 'FREE SHIPPING ON ALL ORDERS', '04/11/2022 02:42 pm'),
-(114, 'bodycandy', 'https://www.bodycandy.com/', '.grid--bar div>span', 'Youre $24.99 Away From Free Shipping!', '04/11/2022 02:44 pm'),
-(116, 'buttahskin', 'https://www.buttahskin.com/', '.announcement--text', 'FREE SHIPPING ON DOMESTIC ORDERS OVER $75', '04/11/2022 03:00 pm'),
-(118, 'championwindow', 'https://www.championwindow.com/', '#main-layout-container div>section', 'Buy 2 Windows Get 2 Free*\n\n20% Off* Sunrooms\n30% Off* Siding\n25% Off* Glass Entry Doors\n\nWith participation in the YES! Program‡\n\n60 Months Low-Interest Financing**\n\n              Offer Ends 4/30.                                 See All Offer Details                                  Schedule Your Free Quote\n\nOr Call 1-877-424-2674', '04/11/2022 03:06 pm'),
-(119, 'hvacdirect', 'https://hvacdirect.com/', 'header div>p', 'Huge Savings on orders over $4,000 . Use coupon code: HURRY and save big! Ends   Click here for restrictions', '04/11/2022 03:08 pm'),
-(120, 'mymedic', 'https://mymedic.com/', '.notification-bar__message', '10% OFF All Kits | SHOP NOW', '04/11/2022 03:13 pm'),
-(121, 'mybinding', 'https://www.mybinding.com/weekly-specials.html', 'h1>span', 'Get Coupons & Receive 10% Your Order Today', '04/11/2022 03:15 pm'),
-(125, 'bbqguys', 'https://www.bbqguys.com/', '.promo-link', 'Free Shipping   Over $55.*', '04/12/2022 01:25 pm'),
-(126, 'asos', 'https://asos.com/us/men/', '.salesBanner-header__title>span', 'NOW UP TO 80% OFF!                                                      \r\n  ITS AN EARLY EASTER TREAT', '04/12/2022 01:25 pm'),
-(127, '3balls', 'https://www.3balls.com/', '.promo-line', 'Free Shipping on Orders Over $90 Details\n\nNo code needed. 			15% OFF YOUR ORDER\n\nCODE: GREEN', '04/12/2022 01:25 pm'),
-(128, 'championwindow', 'https://www.championwindow.com/', '#main-layout-container div>section', 'Buy 2 Windows Get 2 Free*\n\n30% Off* Sunrooms\r\n30% Off* Siding\r\n25% Off* Glass Entry Doors\n\nWith participation in the YES! Program‡\n\n60 Months Low-Interest Financing**\n\n              Offer Ends 4/30.                                 See All Offer Details                                  Schedule Your Free Quote\n\nOr Call 1-877-424-2674', '04/12/2022 01:25 pm'),
-(129, 'keepsakequilting', 'https://www.keepsakequilting.com/', '.freeShipping', 'Free Shipping Over $75', '04/12/2022 04:04 pm'),
-(130, 'levenger', 'https://www.levenger.com/', '.index-enjory>strong', 'Gifts for Them &amp; $25 Gift Card for You* &bull; Code MYGIFTS&nbsp;&bull;', '04/12/2022 04:05 pm'),
-(131, 'bbqguys', 'https://www.bbqguys.com/', '.promo-link', 'Free Shipping   Over $49.*', '04/12/2022 04:05 pm'),
-(132, '3balls', 'https://www.3balls.com/', '.promo-line', 'Free Shipping on Orders Over $99 Details\n\nNo code needed. 			15% OFF YOUR ORDER\n\nCODE: GREEN', '04/12/2022 04:05 pm'),
 (133, 'lumabylaura', 'https://lumabylaura.com/', '.announcement-message-item>p', 'Free USA Shipping for Orders Over $50', '04/13/2022 11:24 am'),
 (134, 'doodahdeals', 'https://doodahdeals.com/', '.announcement-bar__content', 'FREE SHIPPING ON ALL ORDERS!', '04/13/2022 11:34 am'),
 (135, 'nfsports', 'https://nfsports.com/', '.announcement-bar__message', 'FREE USA SHIPPING on orders over $75', '04/13/2022 11:36 am'),
@@ -118,7 +89,11 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (178, 'thebudgrower', 'https://thebudgrower.com/', '.nectar-center-text>a', 'LIMITED TIME OFFER: FREE SHIPPING ON ALL ORDERS', '04/13/2022 01:14 pm'),
 (179, 'strainz', 'https://strainz.com/', '.et_pb_text_inner>h3', 'FREE SHIPPING ON ORDERS OVER $75', '04/13/2022 01:16 pm'),
 (180, 'buylegxercise', 'https://buylegxercise.com/', 'main div+div+figure+div+div>div', '1 YEAR WARRANTY • 100% MONEY BACK GUARANTEE • FREE SHIPPING!', '04/13/2022 01:19 pm'),
-(181, 'revessel', 'https://revessel.com/', '.announcement__text', 'Free shipping on orders $99+', '04/13/2022 01:23 pm');
+(181, 'revessel', 'https://revessel.com/', '.announcement__text', 'Free shipping on orders $99+', '04/13/2022 01:23 pm'),
+(188, 'lxrco', 'https://lxrco.com/', '#announcement_bar>div>a>p', 'Get 15% off your purchase when you sign up to our newsletter – Sign up here', '04/15/2022 01:10 pm'),
+(189, 'spinealign', 'https://www.spinealign.com/', '#shopify-section-header_banner>div>div>div>div', 'EASTER SALE!  USE CODE \"WELCOME10\" FOR A TOTAL OF 20% SAVINGS SITEWIDE. OFFER ENDS IN', '04/15/2022 01:10 pm'),
+(190, '100percentpure', 'https://www.100percentpure.com/', '#TopBannerMessage>p>a', 'Free USA Domestic Shipping on $50+ | CA/UK/EU Shipping', '04/15/2022 01:10 pm'),
+(191, 'hotsox', 'https://www.hotsox.com/', '.notification-bar__message', 'Spring socks that rock. Buy 2, get 1 free &gt;', '04/15/2022 01:10 pm');
 
 --
 -- Indexes for dumped tables
@@ -138,7 +113,7 @@ ALTER TABLE `store`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=182;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
