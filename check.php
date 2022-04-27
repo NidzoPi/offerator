@@ -14,16 +14,32 @@ $spreadsheetId = '1ohPZRbD_8hJ4V17isFAHhxz0QG-6S4_s_U84cMzRs_4';
 
 
 
-$storeURL = $_GET["exStoreURL"];
+$storeURL = $_GET["storeURL"];
 $nameStart = strpos($storeURL, 'www.')+4;
 if($nameStart == 4){
-  $nameStart= $nameStart + 4;
+  $nameStart = $nameStart + 4;
   $nameEnd = strpos($storeURL, '.');
-  $checkName = substr($storeURL, $nameStart, $nameEnd-$nameStart);
+  if(strpos($storeURL, 'shop.') !== false){
+    $storeURLTemp = $storeURL;
+    $storeURL = str_replace("shop.", "", $storeURL);
+    $nameEnd = strpos($storeURL, '.');
+  }
+  $storeName = substr($storeURL, $nameStart, $nameEnd-$nameStart);
+  if(isset($storeURLTemp) === true){
+  $storeURL = $storeURLTemp;
+  }
 }else{
   $storeURLNoWWW = str_replace("www.","",$storeURL);
   $nameEnd = strpos($storeURLNoWWW, '.');
-  $checkName = substr($storeURL, $nameStart, $nameEnd-$nameStart+4);
+  if(strpos($storeURL, 'shop.') !== false){
+    $storeURLTemp = $storeURL;
+    $storeURL = str_replace("shop.", "", $storeURL);
+    $nameEnd = strpos($storeURL, '.');
+  }
+  $storeName = substr($storeURL, $nameStart, $nameEnd-$nameStart+4);
+  if(isset($storeURLTemp) === true){
+    $storeURL = $storeURLTemp;
+  }
 }
 
 
