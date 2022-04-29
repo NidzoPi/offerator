@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2022 at 02:43 PM
+-- Generation Time: Apr 29, 2022 at 08:11 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.28
 
@@ -210,7 +210,38 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (314, 'oodsciencebeauty', 'http://goodsciencebeauty.com/', 'section.announcement span', 'FREE SHIPPING and MONEY BACK GUARANTEE', '04/27/2022 02:27 pm'),
 (315, 'goodsciencebeauty', 'https://goodsciencebeauty.com/', 'section.announcement span', 'FREE SHIPPING and MONEY BACK GUARANTEE', '04/27/2022 02:28 pm'),
 (316, 'enerhealthbotanicals', 'https://enerhealthbotanicals.com/', 'p.announcement-bar__message', 'Save $10 Over $75 w/ Code: SAVE10', '04/27/2022 02:28 pm'),
-(317, 'bobeau', 'https://bobeau.com/', 'a.promo--link', 'FREE GROUND SHIPPING ON ALL ORDERS                        |                         NO CODE REQUIRED', '04/27/2022 02:30 pm');
+(317, 'bobeau', 'https://bobeau.com/', 'a.promo--link', 'FREE GROUND SHIPPING ON ALL ORDERS                        |                         NO CODE REQUIRED', '04/27/2022 02:30 pm'),
+(318, 'health-ade', 'https://health-ade.com/', '.pencil__wrapper>.desktop', 'FREE SHIPPING ON ALL ORDERS!', '04/29/2022 11:55 am'),
+(319, 'reelpaper', 'https://reelpaper.com/', '.announcement-bar p', 'free expedited shipping on all orders', '04/29/2022 12:00 pm'),
+(320, 'truhair', 'https://truhair.com/', '.announcement__text', 'Free Shipping over $50', '04/29/2022 12:09 pm'),
+(321, 'joylot', 'https://www.joylot.com/', '.alert-dismissible>p', '&nbsp;Free&nbsp;JoyLot Rapid&trade;&nbsp;1-2&nbsp;Day&nbsp;Shipping and FREE Returns on Selected Items.  details', '04/29/2022 12:16 pm'),
+(322, 'skinnytan', 'https://www.skinnytan.com/', '.announcement--text', '🎁 FREE GIFT at Checkout 🎁', '04/29/2022 12:17 pm'),
+(323, 'yaasa', 'https://yaasa.com/', '.header-infobar p', 'Free shipping + returns on all orders in the contiguous USA.', '04/29/2022 12:18 pm'),
+(324, 'simplyorganicbamboo', 'https://simplyorganicbamboo.com/', '.announcement-link-text', 'Free Throw Blanket On Orders $300+', '04/29/2022 12:22 pm'),
+(325, 'verveculture', 'https://verveculture.com/', '.promo--link', 'FREE U.S* SHIPPING                        |                         for a limited time only                      </a>            </aside>                                                                                                                                                                                                                                                    Menu                                             	 	Instagram  	Pinterest  	Facebook  	 	YouTube  	 	 	 	                                                                                                                                                                                                                                          Registry                                                       My Account                                                                                 Search                                                                                                  Cart                  ', '04/29/2022 12:24 pm'),
+(326, 'orgain', 'https://orgain.com/', '.preheader__content-text', '25% off first Subscribe & Save orders!', '04/29/2022 12:26 pm'),
+(327, 'brodo', 'https://www.brodo.com/', '.top-bar__text', 'Subscribe &amp; save up to 15% per order!', '04/29/2022 01:50 pm'),
+(328, 'veldskoenshoes', 'https://www.veldskoenshoes.com/', '.promo-banner__content', 'We have the perfect gift for mom order by 4/27 for delivery by 5/8 Shop Now', '04/29/2022 01:59 pm'),
+(329, 'cerusgear', 'https://cerusgear.com/', '.shipping-bar-text', 'WE PAY SHIPPING ON ORDERS OVER                                                                                             $50.00                                                                                            &nbsp', '04/29/2022 02:00 pm'),
+(330, 'bluecoolers', 'https://bluecoolers.com/', '.notification-bar__message', 'FREE SHIPPING ON ALL NEW 3.0 COOLERS!', '04/29/2022 02:01 pm'),
+(331, 'morebeds', 'http://amorebeds.com/', '.l-subheader-cell.at_center', 'Rest easy with 20% OFF any mattress and up to 2 FREE Pillows.\n\nExpires 04/29/2022 at 11:59 pm CST. Discount automatically applied at checkout. Cannot be combined with other offers', '04/29/2022 02:04 pm'),
+(332, 'onzie', 'https://www.onzie.com/', '.announcement__text', '24 HOURS ONLY - $30 THURSDAY IS HAPPENING NOW! Free shipping on U.S. orders over $99 and Intl. Orders over $250', '04/29/2022 02:07 pm'),
+(333, 'petprosupplyco', 'https://www.petprosupplyco.com/', '.headerTwo a', '&nbsp; Free Shipping >$499', '04/29/2022 02:08 pm'),
+(334, 'wowskinscience', 'https://wowskinscience.com/', '.top-message span', 'Free Shipping on $49+ Orders', '04/29/2022 02:10 pm'),
+(335, 'smartforlife', 'https://www.smartforlife.com/', '.notification-bar__message', 'FREE Shipping on Purchases of $45+', '04/29/2022 02:14 pm'),
+(336, 'lookoptic', 'https://www.lookoptic.com/', '.announcement-bar__message.h5', 'MOTHER&#39;S DAY SALE 22% OFF 🌸 CODE: MOM22', '04/29/2022 02:32 pm'),
+(337, 'americanhempoil', 'https://americanhempoil.net/', '.elementor-column+.elementor-column p.elementor-heading-title', 'BUY 2, GET 1 FREE. MIX &amp; MATCH CODE: NOSTRESS', '04/29/2022 02:33 pm'),
+(338, 'halolife', 'https://halolife.io/', '.promo_banner__content', 'Buy any TWO Masks at Regular Price and get ONE FREE With Code: SHARETHELOVE', '04/29/2022 02:37 pm'),
+(339, 'casadesante', 'https://casadesante.com/', '.navbar-striptext', 'BUY NOW PAY LATER WITH SHOP PAY. 10% OFF 1ST ORDER WITH CODE FIRST', '04/29/2022 02:38 pm'),
+(340, 'instyler', 'https://www.instyler.com/', '.newsletter-container>p', 'Join our newsletter for 15% off your first order', '04/29/2022 02:41 pm'),
+(341, 'lureessentials', 'https://lureessentials.com/', '.promo_banner__content', 'Free US Domestic Shipping on Orders Over $75', '04/29/2022 02:43 pm'),
+(342, 'scoutalarm', 'https://www.scoutalarm.com/', 'img+img+span+span', 'Orders $200+ Ship Free', '04/29/2022 02:45 pm'),
+(343, 'jackiemackdesigns', 'https://www.jackiemackdesigns.com/', '.afpromobar_text', '20% off Selected Styles. USE CODE: SAVE20 Shop Now', '04/29/2022 02:47 pm'),
+(344, 'monsterbass', 'https://monsterbass.com/', '.announcement__text', 'Buy a 3 mo. plan & get a 4th box free - use code B3G4', '04/29/2022 02:48 pm'),
+(345, 'getsunflow', 'https://getsunflow.com/', '.AnnouncementBar__Content', 'free fedex ground shipping 🚛 in the continental us on orders of $150 or more', '04/29/2022 02:50 pm'),
+(346, 'barse', 'https://www.barse.com/', '.announcement-text', 'Weve Got You Covered with FREE Shipping and FREE Returns! Click here to join our email list for 20% OFF your first order', '04/29/2022 02:59 pm'),
+(347, 'intotheam', 'https://www.intotheam.com/', '.header div.custom_countdown_timer>a', '30% OFF CLEARANCE! SHOP $3.95 TEES →', '04/29/2022 03:00 pm'),
+(348, 'protectly', 'https://www.protectly.co/', '.top-bar-message>p', 'Abbott COVID-19 Test Kits Available | Free Shipping on orders over $60+', '04/29/2022 03:02 pm');
 
 --
 -- Indexes for dumped tables
@@ -230,7 +261,7 @@ ALTER TABLE `store`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=318;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=349;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
