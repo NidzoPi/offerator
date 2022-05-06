@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2022 at 02:13 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.3.30
+-- Generation Time: May 06, 2022 at 03:29 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -242,26 +242,27 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (346, 'barse', 'https://www.barse.com/', '.announcement-text', 'Weve Got You Covered with FREE Shipping and FREE Returns! Click here to join our email list for 20% OFF your first order', '04/29/2022 02:59 pm'),
 (347, 'intotheam', 'https://www.intotheam.com/', '.header div.custom_countdown_timer>a', '30% OFF CLEARANCE! SHOP $3.95 TEES →', '04/29/2022 03:00 pm'),
 (348, 'protectly', 'https://www.protectly.co/', '.top-bar-message>p', 'Abbott COVID-19 Test Kits Available | Free Shipping on orders over $60+', '04/29/2022 03:02 pm'),
-(349, 'priverevaux', 'https://priverevaux.com/', '.header-promo__cell>a', 'Free shipping on U.S. Orders $50+ | Free Returns', '05/03/2022 02:15 pm'),
-(350, 'kyotobotanicals', 'https://kyotobotanicals.com/', '.notification-bar__message>p>strong', 'Free U.S. ground shipping on all orders over $40.', '05/03/2022 02:20 pm'),
-(351, 'truelemon', 'https://www.truelemon.com/', '.h4.font-family--primary', 'Use code BESTOF2022 for 30% OFF True Lemon', '05/03/2022 02:21 pm'),
-(352, 'grabgreenhome', 'https://grabgreenhome.com/', '.top-bar__slide', 'FREE Shipping on orders over $25 (Continental US Only)', '05/03/2022 02:23 pm'),
-(353, 'mycarpe', 'https://mycarpe.com/', '.Topbar-item-content-inner', 'Limited Time Only: Get Free US Shipping', '05/03/2022 02:24 pm'),
-(354, 'monpure', 'https://monpure.com/', '.desktop', 'Get 15% off today', '05/03/2022 02:26 pm'),
-(355, 'halfdaycbd', 'https://halfdaycbd.com/', '.announcement-bar__message', '🌸 Don&#39;t forget Mom 🌸 Order now in time for Mother&#39;s Day and get 20% OFF 🌸 Use code MOMROCKS 🌸', '05/03/2022 02:28 pm'),
-(356, 'waiwear', 'https://waiwear.com/', '.announcement-bar__message', 'New Markdowns. Save up to 50% OFF', '05/03/2022 02:29 pm'),
-(357, 'trytwentytwenty', 'https://trytwentytwenty.com/', '.announcement-text', 'free shipping for orders over $40', '05/03/2022 02:29 pm'),
-(358, 'thewatermachine', 'https://thewatermachine.com/', '.free_shipping_top_strip', '', '05/03/2022 02:33 pm'),
-(359, 'patchmd', 'https://www.patchmd.com/', '.coupencode>p', 'Buy 2 Save 20%, Buy 3 Save 30%, Buy 4 Save 40%, Buy 5+ Save 50% (Promotion Terms)', '05/03/2022 02:33 pm'),
-(360, 'arcticcool', 'https://arcticcool.com/', '.promo-banner__content>p', 'FREE Ground Shipping in the Contiguous USA on Orders $75+', '05/03/2022 02:34 pm'),
-(361, 'mybalancemeals', 'https://mybalancemeals.com/', '#VariableNanoTextLink', 'Enjoy FREE shipping on orders $99 or more', '05/03/2022 02:35 pm'),
-(362, 'revive365cbd', 'https://www.revive365cbd.com/', '.section_top.bg-primary.text-light>div>p', 'FREE SHIPPING + FREE GIFT ON ORDERS OVER $100', '05/03/2022 02:37 pm'),
-(363, 'tusk', 'https://tusk.com/', '.AnnouncementBar__Content.Heading>a', 'FREE SHIPPING AND FREE RETURNS*', '05/03/2022 02:39 pm'),
-(364, 'otc4me', 'https://otc4me.com/', '.announcement-bar__message>p', 'Take 10% off your first order over $20 with code: OTC10 |   Questions? 1-888-643-4375', '05/03/2022 02:39 pm'),
-(365, 'tankglass', 'https://tankglass.com/', '.announcement-bar__message.text--xsmall>p', 'Free shipping anywhere in the USA* Learn more*', '05/03/2022 02:41 pm'),
-(366, 'dipwell', 'https://dipwell.co/', '.uni-banner-text>p', 'FREE SHIPPING ALL ORDERS OVER $35', '05/03/2022 02:42 pm'),
-(367, 'kaplanmd', 'https://www.kaplanmd.com/', '.promo_banner__content>p>a', 'SHOP OUR NEW MOTHERS DAY KITS & GET A FREE NATURAL LIP GLOSS ($30 VALUE) WITH EVERY ORDER! SHOP NOW', '05/03/2022 02:42 pm'),
-(368, 'getbellway', 'https://getbellway.com/', '.promo-bar--inner', 'Free shipping on orders over $40', '05/03/2022 02:43 pm');
+(349, 'wanawellness', 'https://wanawellness.com/', '.navbar-topmenu li', 'FREE 10-serving gummie with qualifying purchases over $75 • Always FREE Shipping', '05/06/2022 10:04 am'),
+(350, 'bodybark', 'https://bodybark.com/', '.banner p', 'FREE USA SHIPPING ON ORDERS OVER $100', '05/06/2022 10:14 am'),
+(351, 'mtdparts', 'https://www.mtdparts.com/', '.header-banner .callout', 'Free Shipping on Parts Orders Over $45', '05/06/2022 12:32 pm'),
+(352, 'noho', 'https://noho.co/us/products', '.notification__message', 'Buy 2, Save $100. Use code &#x27;PAIRS&#x27; at checkout', '05/06/2022 12:33 pm'),
+(353, 'wisewomanherbals', 'https://wisewomanherbals.com/', '.announcement-bar__message', 'Free Shipping on orders of $50.00 or more. Some restrictions apply.', '05/06/2022 12:39 pm'),
+(354, 'cuveebeauty', 'https://www.cuveebeauty.com/', '.announcement-link-text', 'FREE GIFT! MINI AIR DRY MIST ($15 VALUE) WITH ORDERS $50+', '05/06/2022 12:40 pm'),
+(355, 'peekkids', 'https://peekkids.com/', '.promo-bar', 'Take An Extra 30% Off Sale Styles: Use Code Sunnyday30                        &#x2715;', '05/06/2022 12:41 pm'),
+(356, 'sunwink', 'https://sunwink.com/', '.announcement-bar__message', 'Free Shipping on Orders $50+', '05/06/2022 01:00 pm'),
+(357, 'sonomalavender', 'https://www.sonomalavender.com/', '.announcement-bar__message', 'Orders exceeding $50.00 receive free shipping to a single address.', '05/06/2022 01:01 pm'),
+(358, 'readysetfood', 'https://readysetfood.com/', '.banner-item__message', '40% Off All Plans (1st mo): code RSFPLANS40', '05/06/2022 01:22 pm'),
+(359, 'discountsurgical', 'https://www.discountsurgical.com/', '.free_shipping_blk', 'Free Standard Shipping over $25 \n\nWe Accept FSA Payments \n\nWe are Open and Handling Orders Safely  \n\nTRY OUR FIT FINDER  \n\nFree Expedited Shipping over $75 \n\nOur Response to COVID-19\n\nFree Standard Shipping over $25 \n\nUSE OUR FIT FINDER  \n\nFree Rush Shipping over $75', '05/06/2022 01:25 pm'),
+(360, 'nushfoods', 'https://nushfoods.com/', '.AnnouncementBar__Content.Heading', 'Earn free shipping on orders $35 or more', '05/06/2022 01:26 pm'),
+(361, 'geniusgourmet', 'https://www.geniusgourmet.com/', '.promo_banner', 'FREE KETO ELECTROLYTES & SHIPPING WITH ORDERS OVER $49*', '05/06/2022 02:22 pm'),
+(362, 'wodfitters', 'https://www.wodfitters.com/', 'h4', 'FREE SHIPPING  ON MOST ORDERS over $50 IN THE USA', '05/06/2022 02:23 pm'),
+(363, 'hungrybark', 'https://hungrybark.com/', '.announcement-bar__content', 'May Special | Free Gift + Save 50% OFF Custom Meal Plans', '05/06/2022 02:27 pm'),
+(364, 'tucketts', 'https://tucketts.com/', '.top_bar', 'FREE SHIPPING IN THE U.S. ON ALL ORDERS $40+          		  Shop Now', '05/06/2022 02:28 pm'),
+(365, 'coffeebros', 'https://coffeebros.com/', '.announcement-bar__message.h5', 'Free Shipping on Orders Over $60.00', '05/06/2022 02:30 pm'),
+(366, 'childcraftbaby', 'https://www.childcraftbaby.com/', '#gc-top-open', 'Get a $10 OFF discount code! Click here to learn more.', '05/06/2022 02:30 pm'),
+(367, 'undertheweatherpet', 'https://www.undertheweatherpet.com/', '.top-bar__slide', 'Free Shipping $49+', '05/06/2022 02:31 pm'),
+(368, 'tiremart', 'https://www.tiremart.com/', '.FastFreeShipping>.right', 'FAST & FREE SHIPPING Same day ShippingFor orders before 1PM EST', '05/06/2022 02:33 pm'),
+(369, 'empe-usa', 'https://empe-usa.com/', 'ul.header-nav span', 'Get 15% Off on your first order using Promo Code \"FIRSTEMPE\"', '05/06/2022 02:34 pm');
 
 --
 -- Indexes for dumped tables
@@ -281,7 +282,7 @@ ALTER TABLE `store`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=369;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=370;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
