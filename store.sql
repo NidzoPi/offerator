@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2022 at 03:29 PM
+-- Generation Time: May 09, 2022 at 03:44 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.28
 
@@ -262,7 +262,24 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (366, 'childcraftbaby', 'https://www.childcraftbaby.com/', '#gc-top-open', 'Get a $10 OFF discount code! Click here to learn more.', '05/06/2022 02:30 pm'),
 (367, 'undertheweatherpet', 'https://www.undertheweatherpet.com/', '.top-bar__slide', 'Free Shipping $49+', '05/06/2022 02:31 pm'),
 (368, 'tiremart', 'https://www.tiremart.com/', '.FastFreeShipping>.right', 'FAST & FREE SHIPPING Same day ShippingFor orders before 1PM EST', '05/06/2022 02:33 pm'),
-(369, 'empe-usa', 'https://empe-usa.com/', 'ul.header-nav span', 'Get 15% Off on your first order using Promo Code \"FIRSTEMPE\"', '05/06/2022 02:34 pm');
+(369, 'empe-usa', 'https://empe-usa.com/', 'ul.header-nav span', 'Get 15% Off on your first order using Promo Code \"FIRSTEMPE\"', '05/06/2022 02:34 pm'),
+(370, 'honeygirlorganics', 'https://honeygirlorganics.com/', '.announcement__main', 'FREE U.S. SHIPPING $100+ / FREE CUTICLE &amp; NAIL CREME WITH $125+', '05/09/2022 02:55 pm'),
+(371, 'helloned', 'https://helloned.com/', '.promo-banner', 'GET FREE SHIPPING WITH MEMBERSHIP', '05/09/2022 02:55 pm'),
+(372, 'luxome', 'https://luxome.com/', '.announcement__message', 'FREE SHIPPING TO THE CONTIGUOUS US', '05/09/2022 02:56 pm'),
+(373, 'happywax', 'https://happywax.com/', '.AnnouncementBar__Wrapper p', 'Sign Up and Save 10% Off', '05/09/2022 03:00 pm'),
+(374, 'proleve', 'https://www.proleve.com/', '.top-bar__slide span', 'FREE SHIPPING ON ORDERS OVER $50', '05/09/2022 03:02 pm'),
+(375, 'slumbercbn', 'https://slumbercbn.com/', '.elementor-widget-container span', 'Give Mom the Gift of Sleep:&nbsp; Save 25% off with Code &#8220;Mom25&#8221;', '05/09/2022 03:03 pm'),
+(376, 'overeignlaboratories', 'http://sovereignlaboratories.com/', '.t-site-header__message', 'Free Shipping to all 50 states (and Canada $74+) + AA/AE/AP', '05/09/2022 03:03 pm'),
+(377, 'abonusa', 'http://sabonusa.com/', '.slider-wrapper li', 'Become a Royal Passport Member Today for Free & Start Saving!', '05/09/2022 03:05 pm'),
+(378, 'theperfectrug', 'https://www.theperfectrug.com/', '.wrapper>p', '10% Off Flatweave Rugs &bull; code: DESIGN  info', '05/09/2022 03:06 pm'),
+(380, 'littleme', 'https://littleme.com/', '.top-asset-banner>div+div p', 'Free shipping on $50', '05/09/2022 03:17 pm'),
+(381, 'epicuren', 'https://epicuren.com/', '.AnnouncementBar__Content', '20% Off For Mothers Day - Use Coupon MOM20', '05/09/2022 03:25 pm'),
+(382, 'gillz-gear', 'https://gillz-gear.com/', '.announcement-bar__text', '25% OFF ALL WOMENS APPAREL | FREE U.S. SHIPPING ON ORDERS OVER $75', '05/09/2022 03:29 pm'),
+(383, 'levelselectcbd', 'https://levelselectcbd.com/', '.hero-home-content-wrapper', 'Sitewide Sale Save 25% Use Code: SAVE25  Shop Now', '05/09/2022 03:30 pm'),
+(384, 'silvercuisine', 'https://silvercuisine.com/', '.offer-text', 'Enjoy FREE shipping on orders $99 or more', '05/09/2022 03:31 pm'),
+(385, 'mobhookah', 'https://www.mobhookah.com/', '.woocommerce-store-notice', 'Must be 21 or over to purchase. Free Shipping on orders $150 or more within the US (Excl. Hawaii, Alaska, Puerto Rico). Customs fees might apply on overseas orders incl Canada.  Dismiss', '05/09/2022 03:36 pm'),
+(386, 'cbdrethink', 'https://cbdrethink.com/', '.headship i+span', 'FREE shipping on orders over $65!', '05/09/2022 03:41 pm'),
+(387, 'balticessentials', 'https://www.balticessentials.com/', '.promo-banner__content', 'Code \"MOM\"Saves 20%! We Ship Daily by 2pm. FREE US Shipping on orders &gt; $35', '05/09/2022 03:43 pm');
 
 --
 -- Indexes for dumped tables
@@ -282,7 +299,7 @@ ALTER TABLE `store`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=370;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=388;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
