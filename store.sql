@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 11, 2022 at 01:01 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.3.30
+-- Generation Time: May 11, 2022 at 03:06 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -293,7 +293,44 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (398, 'goedekers', 'https://www.goedekers.com/', '.text-center.pt-4.mt-2', '&copy; 2021 1847 Goedeker, Inc. All Rights Reserved. 3817 Millstone Parkway, St. Charles, MO 63301\n\n&#42; Free Shipping on Appliance Orders &#36;99 &#38; Up and Most Furniture Items.', '05/09/2022 05:54 pm'),
 (399, 'jord', 'https://www.jord.co/', '.col-xs-4.text-center', 'FREE SHIPPING WORLDWIDE!', '05/09/2022 05:56 pm'),
 (400, 'plantpeople', 'https://www.plantpeople.com/', '.one-third.column.alpha', 'Free delivery on online orders', '05/09/2022 05:56 pm'),
-(401, 'mobarmor', 'https://www.mobarmor.com/', 'h3>.text-o-color-4', 'FREE SHIPPING ON EVERY ORDER', '05/09/2022 05:58 pm');
+(401, 'mobarmor', 'https://www.mobarmor.com/', 'h3>.text-o-color-4', 'FREE SHIPPING ON EVERY ORDER', '05/09/2022 05:58 pm'),
+(402, 'frontera', 'https://www.frontera.com/', '.header-messages p', 'EARN 3% BACK | FINANCING | FREE SHIPPING OVER $99', '05/11/2022 02:05 pm'),
+(403, 'superarearugs', 'https://www.superarearugs.com/', '.announcement-bar-text', 'Free + Fast Shipping | 90 Day Warranty', '05/11/2022 02:06 pm'),
+(404, 'buddylove', 'https://buddylove.com/', '.free-shipping-text', 'Free Standard Shipping on All U.S Orders Over $150.', '05/11/2022 02:08 pm'),
+(405, 'tonicvibes', 'https://www.tonicvibes.com/', '.notification-bar', '🌿 20% OFF SITEWIDE 🌿  code: VIBE20', '05/11/2022 02:11 pm'),
+(406, 'bravenewlook', 'https://www.bravenewlook.com/', '.announcement-slider__slide', 'Free shipping On all orders over $75+', '05/11/2022 02:12 pm'),
+(407, 'vitacup', 'https://www.vitacup.com/', '.site-banner__message', 'Try our NEW So Good Super Greens! Save 25% on auto-delivery today.', '05/11/2022 02:13 pm'),
+(408, 'peets', 'https://www.peets.com/', '.promo-bar__content', 'Life Hack: Use code SHIPFREE & score Free Shipping', '05/11/2022 02:14 pm'),
+(409, 'herbspro', 'https://www.herbspro.com/', '.top-message span', 'ARMED FORCES DAY SPECIAL - EXTRA 6% OFF - USE CODE : ARMEDFORCE', '05/11/2022 02:15 pm'),
+(410, 'shoperazorbits', 'https://www.shoperazorbits.com/', '.announcement-bar__text', 'Storewide Buy 2 Get 1 FREE & FREE Shipping  Rewards\n\nGift Guides</a></p>', '05/11/2022 02:16 pm'),
+(411, 'duradry', 'https://duradry.com/', '.topbar-nav-item', 'FREE U.S. SHIPPING ON ORDERS OVER $20', '05/11/2022 02:17 pm'),
+(412, 'milynwellness', 'http://smilynwellness.com/', '.wpb_wrapper span', '20% OFF ON YOUR FIRST ORDER SHOP', '05/11/2022 02:26 pm'),
+(413, 'gloscience', 'https://gloscience.com/', '.announcement__text', 'Free Shipping on All Orders', '05/11/2022 02:27 pm'),
+(415, 'baabuk', 'https://www.baabuk.com/', '.announcement__text', 'Free Baabuk tote bag on orders over 150 EUR. Click here to add tote to your cart.', '05/11/2022 02:30 pm'),
+(416, 'prpsjeans', 'https://www.prpsjeans.com/', '#upper-content>div', 'Free Ground Shipping on all US orders*', '05/11/2022 02:31 pm'),
+(417, 'morehairnaturally', 'https://morehairnaturally.com/', '.pxs-announcement-bar-text-desktop', 'FLASH SALE HAPPENING NOW! |  15% OFF CODE: FLASH15 |  CLICK TO SHOP THE SALE', '05/11/2022 02:31 pm'),
+(418, 'bastionboltactionpen', 'https://bastionboltactionpen.com/', '.announcement-bar__message.h5', 'WRITE YOUR OWN STORY! FREE USA SHIPPING ON ORDERS $75+', '05/11/2022 02:32 pm'),
+(419, 'cbdoil', 'https://cbdoil.com/', '.topbar-text>p', 'FREE SHIPPING ON ORDERS OVER $75', '05/11/2022 02:34 pm'),
+(420, 'chichome', 'https://www.chichome.com/', '.announcement-bar__content', 'SHOP THE SPRING EDIT - GET AN EXTRA 20% OFF WITH CODE: SPRING20', '05/11/2022 02:38 pm'),
+(421, 'ohlalacheri', 'https://ohlalacheri.com/', '.banner-promotion', 'FREE SHIPPING ON US ORDERS $50+', '05/11/2022 02:38 pm'),
+(422, 'unrealfur', 'https://unrealfur.com/', '.announcement-bar__message', 'FREE US SHIPPING &amp; RETURNS ON ORDERS OVER $300', '05/11/2022 02:39 pm'),
+(423, 'peachwood', 'https://peachwood.com/', '.announcement-slider__content', 'Shop and Save Everyday Low Prices                                          \n\nShop and Save Everyday Low Prices', '05/11/2022 02:40 pm'),
+(424, 'beltoutlet', 'https://www.beltoutlet.com/', '[title=\"Shipping & Handling Policies\"]', 'Free Shipping Over $35', '05/11/2022 02:42 pm'),
+(425, 'hairlossdhtshampoo', 'https://hairlossdhtshampoo.com/', '.announcement__text>p', 'FREE US SHIPPING WITH A $49.99 PURCHASE', '05/11/2022 02:44 pm'),
+(426, 'loomandtable', 'https://www.loomandtable.com/', '#banner-message>p', 'Free U.S. Domestic Shipping on Orders $75+', '05/11/2022 02:45 pm'),
+(427, 'beverlyhillsmd', 'https://beverlyhillsmd.com/', '#before_header p', 'Free Shipping on U.S. orders over $39 + 60 Day Money Back Guarantee', '05/11/2022 02:46 pm'),
+(428, 'loveprayjewelry', 'https://www.loveprayjewelry.com/', '.announcement-bar__message.h5', 'Use code: HEALING20 for 20% off - Today only', '05/11/2022 02:47 pm'),
+(429, 'inspireuplift', 'https://www.inspireuplift.com/', '.v_uspwrap svg+span', 'Free Shipping', '05/11/2022 02:49 pm'),
+(430, 'goldensteersteakcompany', 'https://goldensteersteakcompany.com/', '.announcement-link-text', 'Free 2-Day Shipping on all steaks', '05/11/2022 02:50 pm'),
+(431, 'eatgonanas', 'https://eatgonanas.com/', '.announcement-bar__message', 'Free U.S. Shipping Over $45', '05/11/2022 02:50 pm'),
+(432, 'hopwtr', 'https://hopwtr.com/', '.announce_1-wrapper>p', 'Free Shipping on orders $50+', '05/11/2022 02:51 pm'),
+(433, 'skywellness', 'https://www.skywellness.com/', '.notification-bar__message  ', 'celebrate our award nominations  and Save 20% sitewide today! code: springsave20', '05/11/2022 02:53 pm'),
+(434, 'c4healthlabs', 'https://www.c4healthlabs.com/', 'li.icon-3', 'Free Shipping\n\nOrders Over $75.00', '05/11/2022 02:55 pm'),
+(435, 'austere', 'https://austere.com/', '.announcement-bar__content', 'FREE SHIPPING ON ALL U.S. ORDERS. ALWAYS.', '05/11/2022 02:56 pm'),
+(436, 'dermelect', 'https://dermelect.com/', '#offerslideshow>.slide-number-two', 'Free Shipping with Every $25+ Order', '05/11/2022 03:01 pm'),
+(437, 'volcanicacoffee', 'https://volcanicacoffee.com/', '.top-message', 'FREE SHIPPING ORDERS $60+ , $6.95 FLAT RATE', '05/11/2022 03:02 pm'),
+(438, 'livenobs', 'https://www.livenobs.com/', '.announcement-text', 'FREE SHIPPING + SAMPLES', '05/11/2022 03:04 pm'),
+(439, 'jatai', 'https://www.jatai.net/', '.heder-top-right', 'Free shipping on orders of $40 or more within the USA and $75 or more to Canada! Note: Shipping to Canada is experiencing significant delays. See shipping policy page.', '05/11/2022 03:05 pm');
 
 --
 -- Indexes for dumped tables
@@ -313,7 +350,7 @@ ALTER TABLE `store`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=402;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=440;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
