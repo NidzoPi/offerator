@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2022 at 03:44 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.4.28
+-- Generation Time: May 11, 2022 at 01:01 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -279,7 +279,21 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (384, 'silvercuisine', 'https://silvercuisine.com/', '.offer-text', 'Enjoy FREE shipping on orders $99 or more', '05/09/2022 03:31 pm'),
 (385, 'mobhookah', 'https://www.mobhookah.com/', '.woocommerce-store-notice', 'Must be 21 or over to purchase. Free Shipping on orders $150 or more within the US (Excl. Hawaii, Alaska, Puerto Rico). Customs fees might apply on overseas orders incl Canada.  Dismiss', '05/09/2022 03:36 pm'),
 (386, 'cbdrethink', 'https://cbdrethink.com/', '.headship i+span', 'FREE shipping on orders over $65!', '05/09/2022 03:41 pm'),
-(387, 'balticessentials', 'https://www.balticessentials.com/', '.promo-banner__content', 'Code \"MOM\"Saves 20%! We Ship Daily by 2pm. FREE US Shipping on orders &gt; $35', '05/09/2022 03:43 pm');
+(387, 'balticessentials', 'https://www.balticessentials.com/', '.promo-banner__content', 'Code \"MOM\"Saves 20%! We Ship Daily by 2pm. FREE US Shipping on orders &gt; $35', '05/09/2022 03:43 pm'),
+(388, 'vintagehavana', 'https://vintagehavana.com/', '.AnnouncementBar__Content.Heading>a', 'TAKE 20% OFF SITEWIDE WITH CODE LOVEMOM20', '05/09/2022 05:39 pm'),
+(389, 'dankstop', 'https://dankstop.com/', '.top-message', 'Save on a new piece for spring. Take  15% OFF SITEWIDE  with coupon   code:  MAYFLOWERS \r\n                         Close promotional top header', '05/09/2022 05:40 pm'),
+(390, 'b4adventure', 'https://b4adventure.com/', '.announcementBar__container>div>a', 'Save 25% on Plum Play Trampolines!  Click here to see Special Deals!', '05/09/2022 05:46 pm'),
+(391, 'rhondashear', 'https://rhondashear.com/', '.promo_banner__content', 'FREE SHIPPING on domestic orders over $50! | Shop Now, Pay Later with Klarna', '05/09/2022 05:47 pm'),
+(392, 'blueskyvitamin', 'https://blueskyvitamin.com/', '.announcement-bar-text', 'Free fast shipping. Same day fulfillment on orders placed before 3 pm CST.', '05/09/2022 05:47 pm'),
+(393, 'wishgardenherbs', 'https://www.wishgardenherbs.com/', '.promo-bar-text', 'FREE SHIPPING ON DOMESTIC ORDERS OVER $25', '05/09/2022 05:48 pm'),
+(394, 'diathrive', 'https://diathrive.com/', '.alert__content', 'Call 866-878-7477. Free shipping on orders over $25.', '05/09/2022 05:49 pm'),
+(395, 'curveez', 'https://curveez.com/', '.announcement-curveez', 'FREE SHIPPING ON ALL ORDERS OVER $60', '05/09/2022 05:50 pm'),
+(396, 'heatholders', 'https://www.heatholders.com/', '.announcement-bar__inner', 'FREE SHIPPING ON ORDERS OVER $25*', '05/09/2022 05:52 pm'),
+(397, 'traciemartyn', 'https://www.traciemartyn.com/', '.pxs-announcement-bar-text-desktop', 'FREE U.S. SHIPPING ORDERS $75+ | 30-DAY RETURNS', '05/09/2022 05:53 pm'),
+(398, 'goedekers', 'https://www.goedekers.com/', '.text-center.pt-4.mt-2', '&copy; 2021 1847 Goedeker, Inc. All Rights Reserved. 3817 Millstone Parkway, St. Charles, MO 63301\n\n&#42; Free Shipping on Appliance Orders &#36;99 &#38; Up and Most Furniture Items.', '05/09/2022 05:54 pm'),
+(399, 'jord', 'https://www.jord.co/', '.col-xs-4.text-center', 'FREE SHIPPING WORLDWIDE!', '05/09/2022 05:56 pm'),
+(400, 'plantpeople', 'https://www.plantpeople.com/', '.one-third.column.alpha', 'Free delivery on online orders', '05/09/2022 05:56 pm'),
+(401, 'mobarmor', 'https://www.mobarmor.com/', 'h3>.text-o-color-4', 'FREE SHIPPING ON EVERY ORDER', '05/09/2022 05:58 pm');
 
 --
 -- Indexes for dumped tables
@@ -299,7 +313,7 @@ ALTER TABLE `store`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=388;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=402;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
