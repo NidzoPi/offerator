@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 11, 2022 at 03:06 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.4.28
+-- Generation Time: May 12, 2022 at 10:06 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -330,7 +330,23 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (436, 'dermelect', 'https://dermelect.com/', '#offerslideshow>.slide-number-two', 'Free Shipping with Every $25+ Order', '05/11/2022 03:01 pm'),
 (437, 'volcanicacoffee', 'https://volcanicacoffee.com/', '.top-message', 'FREE SHIPPING ORDERS $60+ , $6.95 FLAT RATE', '05/11/2022 03:02 pm'),
 (438, 'livenobs', 'https://www.livenobs.com/', '.announcement-text', 'FREE SHIPPING + SAMPLES', '05/11/2022 03:04 pm'),
-(439, 'jatai', 'https://www.jatai.net/', '.heder-top-right', 'Free shipping on orders of $40 or more within the USA and $75 or more to Canada! Note: Shipping to Canada is experiencing significant delays. See shipping policy page.', '05/11/2022 03:05 pm');
+(439, 'jatai', 'https://www.jatai.net/', '.heder-top-right', 'Free shipping on orders of $40 or more within the USA and $75 or more to Canada! Note: Shipping to Canada is experiencing significant delays. See shipping policy page.', '05/11/2022 03:05 pm'),
+(440, 'bbqguys', 'https://www.bbqguys.com/', '.promo-link', 'Free Shipping   Over $49.*', '05/12/2022 06:44 pm'),
+(441, 'getmyphoenix', 'https://www.getmyphoenix.com/', '.btnRxt', '🌹 Save $125  in honor of Mother’s Day on The Phoenix with coupon MD125  Save $125 NOW', '05/12/2022 06:44 pm'),
+(442, 'lumedeodorant', 'https://lumedeodorant.com/', '.promo_banner__content>p>a>strong', 'Free U.S. Shipping over $25! Shop Now', '05/12/2022 07:02 pm'),
+(443, 'bistromd', 'https://www.bistromd.com/', '.text-center>p', '25% off + free shipping\r\n                      on your first week', '05/12/2022 07:04 pm'),
+(444, 'levenger', 'https://www.levenger.com/', '.index-enjory>strong>strong', 'The Great Pen &amp; Paper Sale &bull; 30% off Select Styles&nbsp;', '05/12/2022 07:05 pm'),
+(445, '3balls', 'https://www.3balls.com/', '#Site > div.MegaMenu > div > div.s-fit.hide-600 > div > div > div > div:nth-child(2) > p:nth-child(1)', 'Free Shipping on Orders Over $99 Details\n\nNo code needed.', '05/12/2022 07:10 pm');
+INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `timeStam`) VALUES
+(446, 'paintyourlife', 'https://www.paintyourlife.com/', '.top-header-banner-part>span', 'Hand-painted Portraits With a 100% Money-Back Guarantee', '05/12/2022 09:50 pm'),
+(447, 'albanypark', 'https://www.albanypark.com/', '.header-promotion-text', 'FREE SHIPPING ON ALL ORDERS', '05/12/2022 09:50 pm'),
+(448, 'bodycandy', 'https://www.bodycandy.com/', '[style=\"font-weight: 100\"]', 'Youre $24.99 Away From Free Shipping!', '05/12/2022 09:51 pm'),
+(449, 'buttahskin', 'https://www.buttahskin.com/', '.announcement--text.font--accent', 'FREE SHIPPING ON DOMESTIC ORDERS $75+', '05/12/2022 09:54 pm'),
+(450, 'florsheim', 'https://www.florsheim.com/shop/index.html', '.col-sm-12.ship', 'FREE Shipping &amp; FREE Returns!*', '05/12/2022 09:55 pm'),
+(451, 'championwindow', 'https://www.championwindow.com/', '.h1', '40% Off* Windows', '05/12/2022 09:56 pm'),
+(452, 'hvacdirect', 'https://hvacdirect.com/', '.top-banner-container>div>p', 'Huge Savings on orders over $4,000 . Use coupon code: HURRY and save big! Ends   Click here for restrictions', '05/12/2022 10:01 pm'),
+(453, 'mymedic', 'https://mymedic.com/', '.notification-bar', '⚡ Flash Sale: 40% OFF Survival Kit Backpack', '05/12/2022 10:02 pm'),
+(454, 'kindredbravely', 'https://www.kindredbravely.com/', '.TopNav-is-middle>p>a', 'SAVE UP TO 75% on select products during our Spring Warehouse Sale!', '05/12/2022 10:05 pm');
 
 --
 -- Indexes for dumped tables
@@ -350,7 +366,7 @@ ALTER TABLE `store`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=440;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=455;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
