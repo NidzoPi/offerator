@@ -12,15 +12,15 @@
         <div class="container">
             <h2>Input new store URL where deals are:</h2>
             <form action="insert.php">
-                <input type="text" class="textField" placeholder="Store URL" name="storeURL">
+                <input type="text" class="textField" placeholder="Store URL" name="storeURL" onclick="this.select()">
                 <h2>Deal selector:</h2>
-                <input type="text" class="textField" placeholder="Deal selector" name="dealSelector">
+                <input type="text" class="textField" placeholder="Deal selector" name="dealSelector" onclick="this.select()">
                 <br>
                 <input type="submit" class="button-7" value="Add">
             </form>
             <h2 class="checkingH">Check if there is new deals for existing store:</h2>
             <form action="check.php">
-                <input type="text" class="textField" placeholder="Existing store URL" name="exStoreURL">
+                <input type="text" class="textField" placeholder="Existing store URL" name="exStoreURL" onclick="this.select()">
                 <br>
                 <input type="submit" class="button-7" value="Check">
             </form>
