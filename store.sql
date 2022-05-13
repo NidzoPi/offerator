@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2022 at 10:06 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.3.30
+-- Generation Time: May 13, 2022 at 02:59 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -149,8 +149,8 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (244, 'hotsox', 'https://www.hotsox.com/', '.notification-bar__message', '25% off all styles and free shipping on $35+ &gt;', '04/20/2022 02:03 pm'),
 (245, 'strainz', 'https://strainz.com/', '.et_pb_text_inner>h3', 'LIMITED TIME OFFER: FREE SHIPPING ON ALL ORDERS', '04/20/2022 02:03 pm'),
 (246, 'strainz', 'https://strainz.com/', '.et_pb_text_inner>h3', 'FREE SHIPPING ON ORDERS OVER $75', '04/20/2022 02:15 pm'),
-(247, 'decoratorsbest', 'https://www.decoratorsbest.com/', '.announcement-bar__inner', 'SAVE 10%! CODE: SPR22 \r\nFREE SHIPPING ON ORDERS OVER $100*', '04/26/2022 10:57 am'),
-(248, 'romadesignerjewelry', 'https://www.romadesignerjewelry.com/', '#announcement-bar-carousel', 'SAVE 25% SITEWIDE | CODE: MOM25                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \n\nFREE SHIPPING OVER $50 | FREE RETURNS                                                                       ', '04/26/2022 10:59 am'),
+(247, 'decoratorsbest', 'https://www.decoratorsbest.com/', '.announcement-bar__inner', '10% OFF! CODE: SMR22 \r\nFREE SHIPPING ON ORDERS OVER $100*', '04/26/2022 10:57 am'),
+(248, 'romadesignerjewelry', 'https://www.romadesignerjewelry.com/', '#announcement-bar-carousel', 'SAVE 20% ON ANKLETS | CODE: ANKLET20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \n\nFREE SHIPPING OVER $50 | FREE RETURNS                                                                  ', '04/26/2022 10:59 am'),
 (254, 'snackshop', 'https://snackshop.com/', '.m-promo-banner__message', 'Free Shipping  on orders over $40', '04/26/2022 12:33 pm'),
 (255, 'bamboobat', 'https://bamboobat.com/', '.shipp_info span', 'Free Shipping on orders $49.99 and up!', '04/26/2022 12:34 pm'),
 (257, 'philosophersguild', 'https://philosophersguild.com/', '.announce-header', '!!! FREE SHIPPING ANYWHERE IN THE CONTINENTAL U.S. FOR ALL RETAIL ORDERS OVER $50.00 !!!', '04/26/2022 12:58 pm'),
@@ -346,7 +346,66 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (451, 'championwindow', 'https://www.championwindow.com/', '.h1', '40% Off* Windows', '05/12/2022 09:56 pm'),
 (452, 'hvacdirect', 'https://hvacdirect.com/', '.top-banner-container>div>p', 'Huge Savings on orders over $4,000 . Use coupon code: HURRY and save big! Ends   Click here for restrictions', '05/12/2022 10:01 pm'),
 (453, 'mymedic', 'https://mymedic.com/', '.notification-bar', '⚡ Flash Sale: 40% OFF Survival Kit Backpack', '05/12/2022 10:02 pm'),
-(454, 'kindredbravely', 'https://www.kindredbravely.com/', '.TopNav-is-middle>p>a', 'SAVE UP TO 75% on select products during our Spring Warehouse Sale!', '05/12/2022 10:05 pm');
+(454, 'kindredbravely', 'https://www.kindredbravely.com/', '.TopNav-is-middle>p>a', 'SAVE UP TO 75% on select products during our Spring Warehouse Sale!', '05/12/2022 10:05 pm'),
+(455, 'boutiquerugs', 'https://boutiquerugs.com/', '.free-shipping-text', 'Free Shipping within the contiguous U.S.', '05/13/2022 01:18 pm'),
+(456, 'splendidspoon', 'https://splendidspoon.com/', '.deal-banner__description', 'Enjoy $15 off with code WELCOME15', '05/13/2022 01:20 pm'),
+(457, 'nuwaveairpurifier', 'https://nuwaveairpurifier.com/', '#mbar', 'GRADUATION GIFT SPECIAL |  BUY ONE OXYPURE, GET A SECOND FOR 20% OFF |  WEB EXCLUSIVE', '05/13/2022 01:21 pm'),
+(458, 'bellybandit', 'https://bellybandit.com/', '.announcement-bar__content', 'Free Domestic Shipping on all orders over $50', '05/13/2022 01:26 pm'),
+(460, 'future', 'https://future.co/', '#premium-navbar-container>div>div>div>div>span', 'Try Future risk-free for 30 days, cancel anytime.', '05/13/2022 01:33 pm'),
+(461, 'cigar', 'https://www.cigar.com/', '.shipping-text', 'FREE SHIPPING on orders $150+ with Elite Advantage Text 2  Text 3  Text 4  Text 5', '05/13/2022 01:34 pm'),
+(462, 'mauijim', 'https://www.mauijim.com/', '.promo-bar-slider__link', 'Free Shipping* and Free Returns', '05/13/2022 01:35 pm'),
+(463, 'getairmoto', 'https://getairmoto.com/', '.button.wiggle', 'Order Now - Up to 52% OFF', '05/13/2022 01:37 pm'),
+(464, 'safcodental', 'https://www.safcodental.com/', '#notifications+section', 'Free shipping on orders over $150', '05/13/2022 01:39 pm'),
+(465, 'newtonbaby', 'https://www.newtonbaby.com/', '.banner-content', 'Free Shipping* &amp; 100-Night Trial', '05/13/2022 01:40 pm'),
+(466, 'polynesia', 'https://www.polynesia.com/', '.featured_offers__box', 'FREE 3-DAY PASS', '05/13/2022 01:40 pm'),
+(467, 'camper', 'https://www.camper.com/en_US', '.slick-slide', 'Free returns to Camper stores', '05/13/2022 01:42 pm'),
+(468, 'gen3ride', 'https://gen3ride.com/', '.static-banner', 'All Bikes $999 With Free Shipping. Use Code 999ALL at Checkout.', '05/13/2022 01:42 pm'),
+(469, 'anadapharmacy', 'http://canadapharmacy.com/', '.sales-bar h2', 'Limited Time Offer. New Customers get $15 off using code: CP15NEW at checkout. Minimum Purchase $79.99.              See all coupons.', '05/13/2022 01:44 pm'),
+(470, 'mudwtr', 'https://mudwtr.com/', '[x-ref=\"announcementBar\"]', 'Free US Shipping + Free Frother Gift with a Starter Kit Subscription', '05/13/2022 01:48 pm'),
+(471, 'everythingbutwater', 'https://www.everythingbutwater.com/', '.notification span', 'FREE SHIPPING ON ORDERS OVER $100. PAYPAL AND APPLE PAY NOW AVAILABLE IN CHECK OUT.', '05/13/2022 01:51 pm'),
+(472, 'inspiranzadesigns', 'https://inspiranzadesigns.com/', '.announcement-link-text', 'My Alphabet Necklace just $26.99 (MSRP $62.99) with code ALPHABET', '05/13/2022 01:53 pm'),
+(473, 'petreleaf', 'https://petreleaf.com/', '.slides', 'FREE SHIPPING ON ORDERS OVER $75!</b>', '05/13/2022 01:57 pm'),
+(474, 'savagecbd', 'https://savagecbd.com/', '.announcement__text', '⭐️  Heads Up! Get 15% Off Your First Purchase With Code WELCOME15! ⭐️', '05/13/2022 01:59 pm'),
+(475, 'ellaparadis', 'https://www.ellaparadis.com/', '.slide a', 'Save UP TO 70% Off Sitewide with code: SELF', '05/13/2022 02:01 pm'),
+(476, 'cordlesssnowblower', 'https://www.cordlesssnowblower.com/?mid=11622808', '.banner--top', 'free shipping on all orders!', '05/13/2022 02:02 pm'),
+(477, 'learnwithhomer', 'https://learnwithhomer.com/', '.banner-text', 'The proven early learning program that provides the best educational start possible.30-DAY FREE TRIAL', '05/13/2022 02:02 pm'),
+(478, 'stonewallkitchen', 'https://www.stonewallkitchen.com/', '.swk-promo-bar-header-paragraph', 'FREE SHIPPING OVER $50 per shipment [Online Only]', '05/13/2022 02:04 pm'),
+(479, 'georgjensen', 'https://www.georgjensen.com/en-us', '.header-promotion-center>span', 'Free Shipping on all Orders Above $99', '05/13/2022 02:05 pm'),
+(480, 'powertac', 'https://www.powertac.com/', '.announcement-text', 'Free Shipping on all continental us orders over $50.00', '05/13/2022 02:07 pm'),
+(481, 'exodrones', 'https://exodrones.com/', '.slide-content__inner>p', '- Save $180 -', '05/13/2022 02:08 pm'),
+(482, 'tiege', 'https://www.tiege.com/', '.home-membership__chart__headline', 'Members Enjoy a 24% Savings', '05/13/2022 02:09 pm'),
+(483, 'hellobonafide', 'https://hellobonafide.com/', '.announcement-bar-2>b', 'Free Shipping On All Subscriptions', '05/13/2022 02:10 pm'),
+(484, 'pistoladenim', 'https://www.pistoladenim.com/', '#banner-message', 'Free domestic shipping on orders over $150', '05/13/2022 02:17 pm'),
+(485, 'oxcroftcollection', 'http://foxcroftcollection.com/', '#skinny-banner>div>div', 'Free Shipping Over $99 &amp; Free Returns', '05/13/2022 02:20 pm'),
+(486, 'nextdaycontacts', 'https://nextdaycontacts.com/', '.elementor-widget-container', 'Happy Presidents Day Weekend!\r\n\r\nSave 25% off site-wide with code: PRESDAY25', '05/13/2022 02:21 pm'),
+(487, 'ds18', 'https://ds18.com/', '.announcement-text', 'FREE SHIPPING ON ALL U.S. ORDERS', '05/13/2022 02:22 pm'),
+(488, 'taosfootwear', 'https://taosfootwear.com/', '#promo p', 'Free Shipping on Orders $125*', '05/13/2022 02:22 pm'),
+(489, 'amerisleep', 'https://amerisleep.com/', '.sale-banner__desc', '', '05/13/2022 02:23 pm'),
+(490, 'anuschkaleather', 'https://www.anuschkaleather.com/', '.top_banner.banner2 a', 'Free Shipping on Domestic Orders over $99. Exclusions Apply. Learn More.', '05/13/2022 02:24 pm'),
+(491, 'lapolicegear', 'https://lapolicegear.com/', '.top-header li>a', 'Free Shipping on Orders over $100 – Shop Now &gt;', '05/13/2022 02:27 pm'),
+(492, 'vapor', 'https://www.vapor.com/', '#newsTicker3', 'VAPOR10 : CLICK HERE to Auto-Apply Promo Code VAPOR10 for 10% off at Checkout', '05/13/2022 02:30 pm'),
+(493, 'sizzlefish', 'https://www.sizzlefish.com/', '.promo_message', 'Call Us Mon-Fri, 7-4 ET At:     (833) 603-0888 \r\nFast Free Shipping On Orders $100+', '05/13/2022 02:34 pm'),
+(494, 'licorice', 'https://licorice.com/', '.ticker-bar p', 'Order Today - Arrives in 3 Business Days. Free $25 Gift Card with Order Over $100!', '05/13/2022 02:35 pm'),
+(495, 'coolwick', 'https://www.coolwick.com/', '.html_topbar_left', 'Free USA Shipping on Thousands of Unique Custom Bowling Jerseys / International Shipping Available', '05/13/2022 02:37 pm'),
+(496, 'ashanderie', 'https://ashanderie.com/', '.announcement-text', 'FREE shipping, exchanges, and returns on US orders', '05/13/2022 02:39 pm'),
+(497, 'oradina', 'https://oradina.com/', '.announcement-bar__content', 'Free Shipping + Returns | Orders Ship in 24 hrs', '05/13/2022 02:40 pm'),
+(498, 'sweetnight', 'https://www.sweetnight.com/', '.tt-description', 'Memorial Day Sale - 35% off  Select Mattresses.  Up to 55% off Everything Else.   Detail', '05/13/2022 02:42 pm'),
+(499, 'cbddoghealth', 'https://cbddoghealth.com/', '.site-notice>p', 'FREE SHIPPING on any orders $100+ SHOP NOW', '05/13/2022 02:42 pm'),
+(500, 'wetforher', 'https://www.wetforher.com/', '.rotate-banner__item-wrapper', 'LESBIONIC DAYS - UP TO 60% OFF - ENDS 05/12', '05/13/2022 02:43 pm'),
+(501, 'mychicagosteak', 'https://www.mychicagosteak.com/', '.message-free>a', '*FREE Shipping + 4 FREE Filet Mignon on any orders $169+ USE CODE: MEMORIAL', '05/13/2022 02:43 pm'),
+(502, 'fairwaystyles', 'https://www.fairwaystyles.com/', '#message', 'FREE SHIPPING ON ALL ORDERS. No coupon necessary. Contiguous US Only.   We are here to support all of your apparel needs – stay safe and healthy', '05/13/2022 02:44 pm'),
+(503, 'miashoes', 'https://www.miashoes.com/', '[title=\"Shipping\"]', 'Free Shipping On All Domestic U.S. Orders & No-Hassle Returns', '05/13/2022 02:44 pm'),
+(504, 'lysse', 'https://www.lysse.com/', '.header-bar__announcement', 'Always free shipping on orders $150+                            shop now', '05/13/2022 02:45 pm'),
+(505, 'wethepeopleholsters', 'https://wethepeopleholsters.com/', '.announcement-bar__message', 'FREE Shipping over $50 (USA Only)', '05/13/2022 02:45 pm'),
+(506, 'edloefinch', 'https://edloefinch.com/', '.announcement__inner', 'FREE SHIPPING ON ALL ORDERS', '05/13/2022 02:46 pm'),
+(507, 'venacbd', 'https://venacbd.com/', '.notification-bar__message', 'Free shipping for orders over $75', '05/13/2022 02:48 pm'),
+(508, 'designessentials', 'https://designessentials.com/', '.promo-banner', 'FREE U.S. Shipping On All Orders Over $50!             ✕', '05/13/2022 02:48 pm'),
+(509, 'vitapodworld', 'https://www.vitapodworld.com/', '.promobar', 'Free shipping on all US orders over $40.   Formulated by Doctors.', '05/13/2022 02:49 pm'),
+(510, 'wendellaugust', 'https://www.wendellaugust.com/', '.banner', 'Free shipping on orders over $100.', '05/13/2022 02:49 pm'),
+(511, 'fabcbd', 'https://fabcbd.com/', '.announcement-bar__message', 'FREE USA SHIPPING ON ORDERS OF $99 OR MORE', '05/13/2022 02:52 pm'),
+(512, 'modernbathroom', 'https://www.modernbathroom.com/', '.d-block+span', 'FREE Shipping on all orders to the 48 contiguous United States', '05/13/2022 02:54 pm'),
+(513, 'dailyhighclub', 'https://dailyhighclub.com/', '.site-header__promo-link', '🚨summertime stock-up alert🚨 10% OFF smokeshop orders USE CODE: SCORE10 AT CHECKOUT', '05/13/2022 02:55 pm'),
+(514, 'puffitup', 'https://puffitup.com/', '.promo-bar', 'Click to auto-apply promo code PUFFEDUP for 15% off at Checkout', '05/13/2022 02:57 pm');
 
 --
 -- Indexes for dumped tables
@@ -366,7 +425,7 @@ ALTER TABLE `store`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=455;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=515;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
