@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 13, 2022 at 02:59 PM
+-- Generation Time: May 16, 2022 at 10:42 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.28
 
@@ -405,7 +405,47 @@ INSERT INTO `store` (`id`, `storeName`, `storeURL`, `dealSelector`, `deal`, `tim
 (511, 'fabcbd', 'https://fabcbd.com/', '.announcement-bar__message', 'FREE USA SHIPPING ON ORDERS OF $99 OR MORE', '05/13/2022 02:52 pm'),
 (512, 'modernbathroom', 'https://www.modernbathroom.com/', '.d-block+span', 'FREE Shipping on all orders to the 48 contiguous United States', '05/13/2022 02:54 pm'),
 (513, 'dailyhighclub', 'https://dailyhighclub.com/', '.site-header__promo-link', '🚨summertime stock-up alert🚨 10% OFF smokeshop orders USE CODE: SCORE10 AT CHECKOUT', '05/13/2022 02:55 pm'),
-(514, 'puffitup', 'https://puffitup.com/', '.promo-bar', 'Click to auto-apply promo code PUFFEDUP for 15% off at Checkout', '05/13/2022 02:57 pm');
+(514, 'puffitup', 'https://puffitup.com/', '.promo-bar', 'Click to auto-apply promo code PUFFEDUP for 15% off at Checkout', '05/13/2022 02:57 pm'),
+(515, 'eadem', 'https://eadem.co/', '#shopify-section-message span', 'FREE SHIPPING ON ALL U.S. ORDERS !', '05/14/2022 04:52 pm'),
+(516, 'emma-sleep', 'https://www.emma-sleep.com/', '.emma-home-hero', '&nbsp;          may sale     \n\nSAVE UP TO 35%                   SHOP NOW                   &nbsp;', '05/14/2022 04:54 pm'),
+(517, 'gethlth', 'https://gethlth.com/', '.header__banner', 'Free shipping on 2+ bags', '05/14/2022 04:55 pm'),
+(518, 'lifefone', 'https://www.lifefone.com/', '.promotion', 'Special Offer Free Month* + Free Shipping*  ORDER NOW   Free Month* + Free Shipping*', '05/14/2022 04:56 pm'),
+(519, 'cooksventure', 'https://cooksventure.com/', '.announcement-bar', 'Click Here to get $50 Off Your First Order | Free Shipping', '05/14/2022 04:56 pm'),
+(520, 'masterpiecesinc', 'https://www.masterpiecesinc.com/', '.shipping-text-banner', 'Free Shipping on all orders above $75', '05/14/2022 04:58 pm'),
+(521, 'hangtimegear', 'https://www.hangtimegear.com/', '.announcement-bar__message', 'Get 2+ KOALA 2.0s &gt;&gt;&gt; Up to 20% goes to help Koalas + FREE U.S. SHIPPING', '05/14/2022 04:58 pm'),
+(522, 'sohimi', 'https://www.sohimi.com/', '.newsletter-popup .enlarge-text', 'For a limited time - sign up for our newsletter for epic early access & an extra 15% off your first order, including sale items!', '05/14/2022 05:01 pm'),
+(523, 'canadadrugsdirect', 'https://www.canadadrugsdirect.com/', '.footer-promo', 'New Customers get 10% off using code: 10CDD2022 &nbsp;at checkout.  Maximum $100 discount.                  See All Coupons', '05/14/2022 05:02 pm'),
+(524, 'plantingtree', 'https://www.plantingtree.com/', '.header-bottom strong.message', 'Free Shipping on Orders $119+', '05/14/2022 05:03 pm'),
+(525, 'redbarn', 'https://www.redbarn.com/', '.shipping-notification', 'Free shipping for orders over 49!*', '05/14/2022 05:03 pm'),
+(526, 'lightingreimagined', 'https://lightingreimagined.com/', '[data-content-region=\"top_banner--global\"]', 'Free Shipping offered on most orders*', '05/14/2022 05:07 pm'),
+(527, 'stonestreetcoffee', 'https://stonestreetcoffee.com/', '.announcement__text', 'USE CODE 3PACK AT CHECKOUT FOR 10% OFF 3+ BAGS', '05/14/2022 05:08 pm'),
+(528, 'alphamarts', 'https://www.alphamarts.com/', '.announcement-bar__inner', '🌼MOTHER&#39;S DAY SALE👩10% OFF OVER ＄399 CODE:MD10🌼', '05/14/2022 05:08 pm'),
+(529, 'jackpotcandles', 'https://www.jackpotcandles.com/', '.top_text p', 'Free Shipping on orders over $75', '05/14/2022 05:09 pm'),
+(530, 'pipesandcigars', 'https://www.pipesandcigars.com/', '#boostbar-promo', 'FREE Shipping on orders over $99!', '05/14/2022 05:10 pm'),
+(531, 'dermae', 'https://dermae.com/', '.header-message', 'FREE SHIPPING ON ORDERS OF $35+', '05/14/2022 05:11 pm'),
+(532, 'everlast', 'https://www.everlast.com/', '.not-logged-in', '$6.99 Ground Shipping on all orders*', '05/14/2022 05:40 pm'),
+(533, 'luminancered', 'https://luminancered.com/', '.announcement-bar__message', 'SPECIAL PROMO: $50 Off &amp; Free 2-Day Shipping | SAVE50', '05/14/2022 05:41 pm'),
+(534, 'worldpetexpress', 'https://www.worldpetexpress.net/', '.d-md-inline+a+span', '| New Customer Sale (10% OFF) - Coupon Code: WPE10', '05/14/2022 06:08 pm'),
+(535, 'nuwaveoxypure', 'https://nuwaveoxypure.com/', '#mbar', 'GRADUATION GIFT SPECIAL |  BUY ONE OXYPURE, GET A SECOND FOR 20% OFF |  WEB EXCLUSIVE', '05/14/2022 06:09 pm'),
+(536, 'meetalleyoop', 'https://meetalleyoop.com/', '.announcement__text', 'Free shipping on all orders $40+', '05/14/2022 06:10 pm'),
+(537, 'praibeauty', 'https://praibeauty.com/', '.promo_banner__content', 'free shipping and returns on all US orders | free gift when you spend $50', '05/14/2022 06:39 pm'),
+(538, 'dd8', 'https://www.dd8shop.com/', '.kyan-promotions__columns>p', 'Welcome to DD8 Shop! Enjoy 30% Off with code: NEW30', '05/16/2022 09:45 am'),
+(539, 'sleepovation', 'https://www.sleepovation.com/', '.promo-inner', 'Super Sale! - 15% off Mattresses &amp; 2 FREE Pillows! | Up to a $600 Value!', '05/16/2022 09:48 am'),
+(541, 'coldsteel', 'https://www.coldsteel.com/', '.topbar-notice', 'Now Offering Free Shipping On All Orders!', '05/16/2022 09:57 am'),
+(542, 'dylanscandybar', 'https://www.dylanscandybar.com/', '.announcement-bar__text', 'Get a FREE tote when you buy any 8 Bulk or Grab & Go Bags Shop Now              \n\nGet a FREE tote when you buy any 8 Bulk or Grab & Go Bags Shop Now', '05/16/2022 09:58 am'),
+(543, 'hellobatch', 'https://hellobatch.com/', '.announcement-bar__inner', 'FREE SHIPPING ON ALL ORDERS $25+ IN ALL 50 STATES', '05/16/2022 09:59 am'),
+(544, 'royalblendcbd', 'https://royalblendcbd.com/', '.top-bar', 'FREE Shipping + FREE Gift ON ORDERS OVER $100', '05/16/2022 10:00 am'),
+(545, 'faithfulandco', 'https://faithfulandco.com/', '.announcement-slider__slide', 'Free shipping On all orders over $75', '05/16/2022 10:10 am'),
+(546, 'kissykissy', 'https://kissykissy.com/', '.top-asset-banner>div+div .promo_right', 'Shipping\n\nFree shipping on $150', '05/16/2022 10:11 am'),
+(547, 'incrediwear', 'https://incrediwear.com/', '.AnnouncementBar__Wrapper', 'Free Shipping over $65', '05/16/2022 10:27 am'),
+(548, 'snipersedgehockey', 'https://www.snipersedgehockey.com/', '.promo-bar-text', 'Free shipping over $50 to U.S. and Canada *', '05/16/2022 10:27 am'),
+(549, 'neurogan', 'https://www.neurogan.com/', '.header__slider', 'Free U.S. Shipping on Orders $50+', '05/16/2022 10:32 am'),
+(550, 'terrapinridge', 'https://terrapinridge.com/', '.headertop', '  Free Shipping at $55.00 Always!              $6.95 Flat Rate Shipping at $30.00\r\n 	 ', '05/16/2022 10:34 am'),
+(551, 'mintandlily', 'https://mintandlily.com/', '.announcement-slider__slide', '15% OFF with code ML15', '05/16/2022 10:35 am'),
+(552, 'cbdamericanshaman', 'https://cbdamericanshaman.com/', '#page-wraper-2>header>div', 'Free Shipping with $99 purchase.', '05/16/2022 10:37 am'),
+(553, 'shelving', 'https://www.shelving.com/Default.asp', '.email-email-fullwidth-row>div>h3>b', 'Get 10% off when you sign up for our email list.', '05/16/2022 10:40 am'),
+(554, 'cobocbd', 'https://cobocbd.com/', '#top', 'Free Shipping on all orders over $74', '05/16/2022 10:40 am'),
+(555, 'everyman', 'https://everyman.co/', '#shopify-section-top-promo-bar', 'FREE DOMESTIC SHIPPING ON ALL ORDERS OF $50 OR MORE              Close', '05/16/2022 10:41 am');
 
 --
 -- Indexes for dumped tables
@@ -425,7 +465,7 @@ ALTER TABLE `store`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=515;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=556;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
